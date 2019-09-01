@@ -103,21 +103,35 @@ Beberapa aturan dasar dalam menentukan network ID dan host ID yang hendak diguna
 - Host ID harus unik dalam suatu network. Dalam suatu network tidak boleh ada dua host dengan host ID yang sama.
 
 Aturan lain:
-•	0/8 : 0.0.0.1 s/d 0.255.255.254
+- 0/8 : 0.0.0.1 s/d 0.255.255.254
+	
 	Host/net : 16.777.214
-•	10/8: 10.0.0.1 s/d 10.255.255.254
+	
+- 10/8: 10.0.0.1 s/d 10.255.255.254
+
 	Host/net : 16.777.214
-•	127/8: 127.0.0.1 s/d 127.255.255.254
+	
+- 127/8: 127.0.0.1 s/d 127.255.255.254
+
 	Host/net : 16.777.214
-•	169.254/16: 169.254.0.1 s/d 169.255.255.254
+	
+- 169.254/16: 169.254.0.1 s/d 169.255.255.254
+
 	Host/net : 65.534
-•	172.16/12: 172.16.0.1 s/d 172.31.255.254
+	
+- 172.16/12: 172.16.0.1 s/d 172.31.255.254
+
 	Host/net : 1.048.574 (Private Internet)
-•	192.0.2/24: 192.0.2.1 s/d 192.0.2.254
-    	Host/net : 254
-•	192.168/16: 192.168.0.1 s/d 192.168.255.254
-    	Host/net :65534
-•	Semua space dari kelas D dan E dapat digunakan untuk IP Address Local Area Network, karena IP ini tidak digunakan di internet
+	
+- 192.0.2/24: 192.0.2.1 s/d 192.0.2.254
+
+    Host/net : 254
+    	
+- 192.168/16: 192.168.0.1 s/d 192.168.255.254
+
+    Host/net :65534
+    	
+- Semua space dari kelas D dan E dapat digunakan untuk IP Address Local Area Network, karena IP ini tidak digunakan di internet
 
 
 ###Subnet
@@ -125,25 +139,39 @@ Aturan lain:
 Konsep Subnetting dari IP Address merupakan teknik yang umum digunakan di internet untuk mengefisienkan alokasi IP Address dalam sebuah jaringan supaya bisa memaksimalkan IP Address. Subnetting merupakan proses memecah satu kelas IP Address menjadi beberapa subnet dengan jumlah host yang lebih sedikit, dan untuk menentukan batas network ID dalam suatu subnet, digunakan subnet mask.
 Contoh subnet:
 
-| Subnet | Host | Network Address |
-| ---    | ---  | ---             |
-| 1      | 62   | 202.91.8.0/26   |
-| 2      | 62   | 202.91.8.64/26  |
-| 3      | 62   | 202.91.8.128/26 |
-| 4      | 62   | 202.91.8.192/26 |
-| Subnet Mask   | 255.255.255.192 |
+<figure style="text-align: center">
+    <figcaption style="text-align: center">Contoh Subnet</figcaption>
+    <img src="images/image-02-05.png" alt="Contoh Subnet"/>
+</figure>
+
+<figure style="text-align: center">
+    <figcaption style="text-align: center">Tabel Subnet</figcaption>
+    <img src="images/image-02-06.png" alt="Tabel Subnet"/>
+</figure>
 
 ###Subnetting
 
-Jumlah Host per Network 2 n -2
+Jumlah Host per Network 2<sup>n</sup> -2
 n adalah jumlah bit tersisa sebelum diselubungi. Contoh: network prefix /10 maka bit tersisa adalah 32-10=22
-2 22 -2=4194302
+
+2<sup>22</sup> -2=4194302
+
 Jumlah subnet = 2 N
+
 Dimana N adalah jumlah bit yang dipergunakan.
+
 N=network prefix-8
+
 Contoh: network prefix /10, maka
+
 N=10-8 = 2
-2 2 =4
+
+2<sup>2</sup> =4
+
+<figure style="text-align: center">
+    <img src="images/image-02-07.png" alt="Tabel Subnetting Ip Kelas C"/>
+    <figcaption style="text-align: center">Tabel Subnetting Ip Kelas C</figcaption>
+</figure>
 
 ###DNS
 
@@ -177,18 +205,32 @@ Selain method untuk menginstansi objek, class InetAddress memiliki method getter
 Lakukan instalasi Netbeans di computer Anda, kemudian buatlah sebuah project baru seperti berikut:
 1. Klik menu File >> New Project atau menggunakan shortcut dengan menekan kombinai tombol Ctrl + Shift + N atau dengan cara meng-Klik icon New Project pada toolbar.
 2. Pada jendela New Project dibagian Categories silahkan anda pilih sesuai dengan kebutuhan anda. Disini saya memilih java. Dan dibagian Projects saya memilih java application. Setelah itu klik Next.
-
-    ![Create Project](images/image-02-01.png)
+    
+    <figure>
+              <img src="images/image-02-01.png" alt="Menu Netbeans"/>
+              <figcaption style="text-align: center">Menu Netbeans</figcaption>
+    </figure>
 
 3. Pada jendela New Java Application dibagian Project Name silahkan anda isi nama project anda. Sebagai Contoh disini saya isi dengan nama “Programku”. Dibagian project location adalah tempat penyimpanan project anda. Anda bisa merubahnya sesuai dengan keinginan anda. Tapi disini saya biarkan default aja. Dibagian Create Main Class, jika project yang anda buat ingin dijadikan sebagai main class atau kelas utama jangan hilangkan centangnya. Jika tidak, maka hilangkan centangnya. Disini saya jadikan sebagai main class. Jadi centangnya biarkan saja. Selanjutnya klik Finish
-
-    ![New project](images/image-02-02.png)
+    
+    <figure>
+          <img src="images/image-02-02.png" alt="Menu membuat project baru"/>
+          <figcaption style="text-align: center">Menu membuat project baru</figcaption>
+    </figure>
     
 4. Setelah anda mengklik Finish, pembuatan project baru sudah selesai dan akan tampil seperti pada gambar dibawah ini:
-
-    ![Class main](images/image-02-03.png)
+    
+    <figure>
+          <img src="images/image-02-03.png" alt="Editor Netbeans"/>
+          <figcaption style="text-align: center">Editor Netbeans</figcaption>
+    </figure>
 
 5. Buatlah contoh penggunaan class InetAddress pada komputer yang terkoneksi dengan jaringan Internet adalah sebagai berikut:
+    
+    <figure>
+      <img src="images/image-02-04.png" alt="Contoh kode"/>
+      <figcaption style="text-align: center">Contoh kode</figcaption>
+    </figure>
 
 ##Tugas
 

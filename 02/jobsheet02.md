@@ -249,6 +249,11 @@ Kerjakan soal berikut:
     
     - Program harus menggunakan mode GUI(Swing)
     - Terdapat validasi input format ip address
+    
+    <figure style="text-align: center">
+              <img src="images/image-02-tugas02.gif" alt="Tugas 02"/>
+              <figcaption style="text-align: center">Tugas 02</figcaption>
+    </figure>
 
 3. Buatlah program untuk mendeteksi IP dari sebuah alamat URL! Ketentuan program adalah sebagai berikut:
 

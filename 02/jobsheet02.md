@@ -151,7 +151,7 @@ Contoh subnet:
 
 ###Subnetting
 
-Jumlah Host per Network 2<sup>n</sup> -2
+Jumlah Host per Network 2<sup>n</sup> -2,
 n adalah jumlah bit tersisa sebelum diselubungi. Contoh: network prefix /10 maka bit tersisa adalah 32-10=22
 
 2<sup>22</sup> -2=4194302
@@ -235,7 +235,17 @@ Lakukan instalasi Netbeans di computer Anda, kemudian buatlah sebuah project bar
 ##Tugas
 
 Kerjakan soal berikut:
-1. IP kelas C 202.152.0.1/27.  Tentukan berapa jumlah host maximal yang bisa disusun dalam jaringan dan berapa jumlah subnetnya.
-2. Buatlah program untuk mendeteksi sebuah IP termasuk kelas A, B, C, D atau E.
-3. Buatlah program untuk mendeteksi IP dari sebuah alamat URL!
-4. Buatlah program untuk mendeteksi IP yang ada di computer Anda dalam bentuk grafik!
+1. IP kelas C 202.152.0.1/27.  Tentukan berapa jumlah host maximal yang bisa disusun dalam jaringan dan berapa jumlah subnetnya. Ketentuan program adalah sebagai berikut:
+
+    - Setelah berhasil menghitung menggunakan manual, silakan dibuat programnya menggunakan GUI(Swing).
+    - Dalam program yang Anda buat terdapat untuk validasi ip address ketika penggunaa menginputkan bukan format ip address
+
+2. Buatlah program untuk mendeteksi sebuah IP termasuk kelas A, B, C, D atau E. Ketentuan program adalah sebagai berikut:
+    
+    - Program harus menggunakan mode GUI(Swing)
+    - Terdapat validasi input format ip address
+
+3. Buatlah program untuk mendeteksi IP dari sebuah alamat URL! Ketentuan program adalah sebagai berikut:
+
+    - Program harus menggunakan mode GUI(Swing)
+    - Terdapat validasi input sebuah URL

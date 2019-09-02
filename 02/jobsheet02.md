@@ -239,6 +239,11 @@ Kerjakan soal berikut:
 
     - Setelah berhasil menghitung menggunakan manual, silakan dibuat programnya menggunakan GUI(Swing).
     - Dalam program yang Anda buat terdapat untuk validasi ip address ketika penggunaa menginputkan bukan format ip address
+    
+    <figure style="text-align: center">
+          <img src="images/image-02-tugas01.gif" alt="Tugas 01"/>
+          <figcaption style="text-align: center">Tugas 01</figcaption>
+    </figure>
 
 2. Buatlah program untuk mendeteksi sebuah IP termasuk kelas A, B, C, D atau E. Ketentuan program adalah sebagai berikut:
     

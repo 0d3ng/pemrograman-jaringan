@@ -393,3 +393,7 @@ Pada praktikum 3 akan membuat program sederhana untuk menulis dan membaca sebuah
 2. Jika yang disimpan dengan yang dibaca tidak sesuai, silakan disesuaikan!
 
 ## Tugas
+
+1. Pada **praktikum 1** data yang dibaca masih berupa angka-angka, silakan disesuaikan sehingga data yang dituliskan sesuai dengan yang dibaca!
+2. Pada **praktikum 3**, ketika diinputkan kalimat beberapa baris end of line tidak berfungsi. Perbaiki hal tersebut agar end of line bisa berfungsi dengan baik!
+3. Tambahkan pesan dialog mengunakan `JoptionPane` ketika operasi sudah selesai atau terjadi error, misalkan operasi baca data atau menulis!

@@ -300,7 +300,7 @@ Pada praktikum 2 ini kita akan memanfaatkan class `BufferedInputStream` dan clas
 
 ## Tugas
 
-<!---1. Buat sebuah program dengan tampilan seperti berikut ini
+1. Buat sebuah program dengan tampilan seperti berikut ini
 
     <figure style="text-align: center">
             <img src="images/praktikum04-tugas.gif" alt="Tugas"/>
@@ -314,4 +314,4 @@ Pada praktikum 2 ini kita akan memanfaatkan class `BufferedInputStream` dan clas
 4. Dengan memanfaatkan class `PrintStream`, buatlah sebuah file logging dari program di atas. 
     - File `log.log` untuk mencatat ketika berhasil melakukan perhitungan
     - File `log.err` untuk mencatat ketika terjadi error.
-5. Selamat mengerjakan. :) -->
+5. Selamat mengerjakan. :) 

@@ -111,11 +111,11 @@ Ubah kode di atas sehingga bisa melakukan hal-hal sebagai berikut
 
 ## Tugas
 
-<!--- Buat sebuah program dengan tampilan seperti berikut ini
+Buat sebuah program dengan tampilan seperti berikut ini
 
  <figure style="text-align: center">
             <img src="images/praktikum05-tugas.gif" alt="Tugas"/>
             <figcaption style="text-align: center; font-weight: bold">Menampilkan jumlah baris, kata, dan karakter</figcaption>
         </figure>
 
-**Selamat mengerjakan. :)** --> 
+**Selamat mengerjakan. :)**

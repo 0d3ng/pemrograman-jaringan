@@ -7,4 +7,5 @@
 * [3. Stream](03/jobsheet03.md)
 * [4. Filter Stream](04/jobsheet04.md)
 * [5. Line Number - Filter Stream](05/jobsheet05.md)
+* [6. Push Back - Filter Stream](06/jobsheet06.md)
 

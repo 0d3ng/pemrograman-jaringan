@@ -109,12 +109,8 @@ Pada praktikum 1 yaitu program yang dibuat agar dapat membaca input melalui keyb
 - Panggil method `unread()` untuk membaca kata tertentu dari file `coba.txt` 
 
 ## Tugas
+- Silakan modifikasi praktikum ke-2 sehingga bisa memiliki fungsi-fungsi berikut ini
+- Silakan menggunakan form yang sebelumnya sehingga bisa browse file yang akan dibaca menggunakana class `PushbackInputStream` atau `PushbackReader`
+- Silakan tampilkan informasi jumlah baris, jumlah kata, dan jumlah karakter dari file telah dibaca!  
 
-<!---Buat sebuah program dengan tampilan seperti berikut ini
-
- <figure style="text-align: center">
-            <img src="images/praktikum05-tugas.gif" alt="Tugas"/>
-            <figcaption style="text-align: center; font-weight: bold">Menampilkan jumlah baris, kata, dan karakter</figcaption>
-        </figure>
-
-**Selamat mengerjakan. :)** --->
+**Selamat mengerjakan. :)**

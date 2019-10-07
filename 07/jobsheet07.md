@@ -11,6 +11,7 @@ Mengimplementasikan semua yang didapatkan dari pertemuan awal sampai dengan Stre
 -   Buat anggota kelompok berjumlah 3 orang
 -   Presentasikan ide kelompok Anda di depan kelas
 -   Slide terdiri kurang lebih 5 slide(judul, latar belakang, tujuan, daftar fitur yang akan dibuat, dll)
+-   Aplikasi boleh/tanpa GUI
 
 Contoh ide project
 

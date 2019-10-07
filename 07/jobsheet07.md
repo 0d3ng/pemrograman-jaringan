@@ -18,13 +18,14 @@ Contoh ide project
 Membuat sebuah **aplikasi text editor**
 
 Di dalam aplikasi tersebut terdapat fungsi standard seperti
--   Read/write file, cut/copy/paste, format text(**bold**/~~undeline~~/_cetak miring_), detail informasi file(jumlah karakter, jumlah kata, dan jumlah kalimat), coloring text/background
+-   Read/write file, cut/copy/paste, format text(**bold**/~~undeline~~/_cetak miring_), detail informasi file(jumlah karakter, jumlah kata, dan jumlah kalimat), coloring text/background, logging ke file
 -   Compile dan running aplikasi, contoh kode Java
 -   Highligh color
 -   Format code
 -   Auto completion
 -   Export file
 -   Screenshoot
+-   Line number
 -   ...
 -   Point pertama wajib ada, setelahnya minimal 1 fitur
 

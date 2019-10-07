@@ -26,7 +26,15 @@ Di dalam aplikasi tersebut terdapat fungsi standard seperti
 -   Export file
 -   Screenshoot
 -   Line number
+-   Fungsi search
+-   Fungsi go to line number tertentu
 -   ...
 -   Point pertama wajib ada, setelahnya minimal 1 fitur
+
+## Pengumpulan tugas
+
+-   Silakan forking project di [sini](https://github.com/0d3ng/pemrograman-jaringan-mini-project.git)
+-   Pengumpulan laporan dilakukan di LMS
+-   **Batas demo atau show off aplikasi H-1 UTS**   
 
 **Selamat mengerjakan. :)**

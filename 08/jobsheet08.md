@@ -235,8 +235,10 @@ Pada praktikum yang kedua menerapkan kata kunci `transient` dan `static` pada se
    <figure style="text-align: center">
                   <img src="images/08-02.png" alt="Install plugin"/>
                   <figcaption style="text-align: center; font-weight: bold">Install plugin</figcaption>
-              </figure>
-              
+              </figure>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+   
+   
+   
    Jika sudah berhasil, kemudian klik kanan pada class yang akan digenerate `serialVersionUID` seperti ditunjukkan pada gambar di bawah ini
    <figure style="text-align: center">
                      <img src="images/08-03.png" alt="Genereate serialVersionUID"/>
@@ -279,11 +281,9 @@ Pada praktikum yang kedua menerapkan kata kunci `transient` dan `static` pada se
 2. Apa yang dapat Anda simpulkan dengan praktikum 1 dan praktikum 2?
 
 ### Tugas
-<!---
 Buatlah aplikasi CRUD sederhana seperti tampilan di atas dengan memanfaatkan teknik serialization dan deserialization, sehingga ketika sudah berhasil menyimpan data ketika aplikasi dijalankan kembali tidak hilang.
 <figure style="text-align: center">
                      <img src="images/praktikum08-tugas.gif" alt="Operasi CRUD"/>
                      <figcaption style="text-align: center; font-weight: bold">Operasi CRUD</figcaption>
                  </figure>
-!--->
-**Kerjakan praktikum terlebih dahulu ^_^**
+<!---**Kerjakan praktikum terlebih dahulu ^_^**-->

@@ -53,6 +53,8 @@ Public class UserAccount implements java.io.Serializable {
 		}
 }
 ```
+> Attribut yang menggunakan modifier `transient` ketika proses serializable akan di-exclude, tidak ikut diserialisasi sehingga nilai dari attribut tersebut adalah null atau 0.
+> Selain menggunakan modifier `transient`, modifier `static` pada attribut juga dikenai serialisasi atau ketika sebuah object telah dilakukan write dapat diubah kembali attribut tersebut.
 #### Object Deserialization
 Deserialization merupakan kebalikan dari serialization, yaitu mengubah byte stream ke dalam sebuah object ke dalam memori.
 

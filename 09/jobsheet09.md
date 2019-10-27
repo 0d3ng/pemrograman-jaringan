@@ -217,13 +217,13 @@ Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu
 3. Buatlah instance variabel `Generator` pada thread yang Anda buat
 4. Tambahkan kode `generator.generateRandomNumber(getName())` pada method `run()`
 5. Jalankan thread yang anda buat dengan menambahkan
-    - Instance Generator, lewatkan nilai 10 dan 100
+    - Instance `Generator`, lewatkan nilai 10 dan 100
     - Buatlah 2 instance thread yang Anda buat.
-    - Jalankan masing-masing thread tersebut dengan memanggil methode start().
+    - Jalankan masing-masing thread tersebut dengan memanggil methode `start()`.
     
 #### Pertanyaan
-1. `Class Generator` diguankan untuk apa?
-2. Apakah fungsi kata kunci `synchronized` pada class Generator?
+1. `Class Generator` digunakan untuk apa?
+2. Apakah fungsi kata kunci `synchronized` pada `class Generator`?
 
 ### Tugas
 Kerjakan praktikum dulu. ^_^

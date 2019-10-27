@@ -64,6 +64,12 @@ Berikut ini adalah methode yang terdapat pada `class Thread`
 `implements interface Runnable` 
 3. `public final void setName(String name)`, mengeset nama sebuah object thread
 4. `public final void setPriority(int priority)`, mengeset prioritas dari sebuah thread. Nilai prioritas antara 1-10.
+5. `public final void setDaemon(boolean on)`, mengeset apakah thread dijadikan sebuah daemon. Daemon adalah aplikasi yang
+berjalan sebagai background
+6. `public final void join(long millisec)`, digunakan untuk menggabungkan sebuah thread. Thread yang bergabung harus
+thread yang lain atau sebelumnya menyelesaikan tugasnya dan terminated.
+7. `public void interrupt()`, melakukan interrupt sebuah thread dengan meneruskan untuk mengerjakan sebuah proses
+8. `public final boolean isAlive()`, mengecek apakah thread masih jalan atau tidak
 
 #### Membuat Thread
 Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu
@@ -116,3 +122,108 @@ Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu
    >        }).start();
    >```
    >Jika dijalankan maka akan menampilkan `Hello Thread`
+
+### Praktikum
+#### Praktikum 1
+1. Buatlah kode seperti di bawah ini untuk membuat sebuah Thread dengan `implements Runnable`
+    ```java
+    public class ThreadOne implements Runnable {
+    
+        private final String name;
+    
+        public ThreadOne(String name) {
+            this.name = name;
+        }
+    
+        @Override
+        public void run() {
+            for (int i = 0; i < 10; i++) {
+                System.out.println(name + ": " + i);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(ThreadOne.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    
+    }
+    ```
+2. Selanjutnya buat kode di bawah ini untuk membuat thread dengan `extends class Thread`
+    ```java
+    public class ThreadTwo extends Thread {
+    
+        @Override
+        public void run() {
+            for (int i = 0; i < 10; i++) {
+                System.out.println(getName() + ": " + i);
+                try {
+                    sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(ThreadTwo.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    
+    }
+    ```
+3. Kemudian buat main thread untuk memanggil kedua thread yang telah kita buat sebelumnya
+    ```java
+    public class Praktikum1 {
+        public static void main(String[] args) {
+            Thread t = new Thread(new ThreadOne("Thread Satu"));
+            t.start();
+            ThreadTwo t2 = new ThreadTwo();
+            t2.setName("Thread Dua");
+            t2.start();
+        }
+    }
+    ```
+4. Silakan jalankan kode yang telah Anda buat, amati dan pelajari hasilnya!
+
+#### Pertanyaan
+1. Apakah fungsi dari methode `sleep()`?
+2. Sebutkan keuntungan dan kelemahan menciptakan sebuah thread dengan `extends class Thread` dan `implement interface
+ Runnable`?
+ 
+#### Praktikum 2
+1. Buatlah class sebagai berikut
+    ```java
+    public class Generator {
+    
+        private int low, high;
+    
+        public Generator(int low, int high) {
+            this.low = low;
+            this.high = high;
+        }
+    
+        public synchronized void generateRandomNumber(String name) {
+            Random r = new Random();
+            for (int i = 0; i < 10; i++) {
+                int result = r.nextInt(high - low) + low;
+                System.out.println(name + ": " + result);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Generator.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    
+    }
+    ```
+2. Buatlah sebuah thread, silakan menggunakan `extends class Thread atau implement interface Runnable`
+3. Buatlah instance variabel `Generator` pada thread yang Anda buat
+4. Tambahkan kode `generator.generateRandomNumber(getName())` pada method `run()`
+5. Jalankan thread yang anda buat dengan menambahkan
+    - Instance Generator, lewatkan nilai 10 dan 100
+    - Buatlah 2 instance thread yang Anda buat.
+    - Jalankan masing-masing thread tersebut dengan memanggil methode start().
+    
+#### Pertanyaan
+1. `Class Generator` diguankan untuk apa?
+2. Apakah fungsi kata kunci `synchronized` pada class Generator?
+
+### Tugas
+Kerjakan praktikum dulu. ^_^

@@ -220,7 +220,12 @@ Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu
     - Instance `Generator`, lewatkan nilai 10 dan 100
     - Buatlah 2 instance thread yang Anda buat.
     - Jalankan masing-masing thread tersebut dengan memanggil methode `start()`.
-    
+    Output yang diharapkan adalah sebagai berikut
+        
+     <figure style="text-align: center">
+        <img src="images/09-01.png" alt="Life cycle thread"/>
+        <figcaption style="text-align: center">Output</figcaption>
+      </figure>    
 #### Pertanyaan
 1. `Class Generator` digunakan untuk apa?
 2. Apakah fungsi kata kunci `synchronized` pada `class Generator`?

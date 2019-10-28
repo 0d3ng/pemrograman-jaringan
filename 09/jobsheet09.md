@@ -231,4 +231,8 @@ Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu
 2. Apakah fungsi kata kunci `synchronized` pada `class Generator`?
 
 ### Tugas
-Kerjakan praktikum dulu. ^_^
+Buatlah program dengan fungsi dan tampilan seperti di bawah ini
+<figure style="text-align: center">
+    <img src="images/praktikum09-tugas.gif" alt="Life cycle thread"/>
+    <figcaption style="text-align: center">Tugas</figcaption>
+</figure>

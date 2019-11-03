@@ -101,6 +101,19 @@ menggunakan `interface Callable`, `interface` tersebut terletak di `java.util.co
 `interface Future` digunakan untuk menampung nilai kembali dari `interface Callable`, nilai yang ditampung atau yang
 dapat dilewatkan pada `Callable` tidak hanya variabel biasa tetapi bisa sebuah objek.
 
+#### `Library Guava`
+Selain menggunakan interface atau class bawaan Java, sebenarnya [Google](https://github.com/google/guava) juga 
+menyediakan `Library` untuk urusan concurrent. Ketika menggunakan maven dapat ditambahkan tag di bawah ini pada file
+`pom.xml`, untuk versi terbaru bisa juga mencari di 
+[Maven Central](https://search.maven.org/classic/#search%7Cgav%7C1%7Cg%3A%22com.google.guava%22%20AND%20a%3A%22guava%22).
+```xml
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>19.0</version>
+</dependency>
+```
+
 ## Praktikum
 ### Praktikum 1
 1. Buatlah kode seperti di bawah ini untuk membuat sebuah Thread dengan `implements Runnable`
@@ -152,50 +165,52 @@ dengan `ExecutorService executor = Executors.newFixedThreadPool(5)`
 #### Praktikum 2
 1. Buatlah class sebagai berikut
     ```java
-    public class Generator {
+    public class Tist implements Callable<String> {
     
-        private int low, high;
+        private String name;
     
-        public Generator(int low, int high) {
-            this.low = low;
-            this.high = high;
+        public Tist(String name) {
+            this.name = name;
         }
     
-        public synchronized void generateRandomNumber(String name) {
-            Random r = new Random();
-            for (int i = 0; i < 10; i++) {
-                int result = r.nextInt(high - low) + low;
-                System.out.println(name + ": " + result);
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Generator.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
+        @Override
+        public String call() throws Exception {
+            return name + " Message from Callable";
         }
     
     }
     ```
-2. Buatlah sebuah thread, silakan menggunakan `extends class Thread atau implement interface Runnable`
-3. Buatlah instance variabel `Generator` pada thread yang Anda buat
-4. Tambahkan kode `generator.generateRandomNumber(getName())` pada method `run()`
-5. Jalankan thread yang anda buat dengan menambahkan
-    - Instance `Generator`, lewatkan nilai 10 dan 100
-    - Buatlah 2 instance thread yang Anda buat.
-    - Jalankan masing-masing thread tersebut dengan memanggil methode `start()`.
+2. Buatlah sebuah kelas `Praktikum2`
+3. Buatlah instance variabel `executor` dari `interface Executors` dengan jumlah thread fix 5
+4. Submit task dari object Task sebanyak 10 kali dan ambil nilai kembalinya.
     Output yang diharapkan adalah sebagai berikut
         
      <figure style="text-align: center">
-        <img src="images/09-01.png" alt="Life cycle thread"/>
+        <img src="images/10-01.png" alt="Output praktikum 02"/>
         <figcaption style="text-align: center">Output</figcaption>
       </figure>    
+
 #### Pertanyaan
-1. `Class Generator` digunakan untuk apa?
-2. Apakah fungsi kata kunci `synchronized` pada `class Generator`?
+1. Silakan coba method `public V get(long timeout, TimeUnit unit)` untuk mendapatkan nilai kembalian dari objek
+`Callable`. Perbedaannya apa dengan `get()`, tanpa parameter?
+2. Ubah kode pada method `call()` kelas `Tist`, menjadi kode untuk menghitung nilai total dari 5 buah nilai, silakan
+menggunakan perulangan untuk menghitungnya. Setelah diubah, lewatkan objek `Tist` sebanyak 10 kali sehingga outputnya
+seperti di bawah ini
+    <figure style="text-align: center">
+        <img src="images/10-02.png" alt="Output Pertanyaan"/>
+        <figcaption style="text-align: center">Output</figcaption>
+      </figure>
 
 ### Tugas
 Buatlah program dengan fungsi dan tampilan seperti di bawah ini
 <figure style="text-align: center">
-    <img src="images/praktikum09-tugas.gif" alt="Life cycle thread"/>
+    <img src="images/praktikum10-tugas.gif" alt="Tugas"/>
     <figcaption style="text-align: center">Tugas</figcaption>
 </figure>
+
+Kebutuhan program di atas adalah
+1. Dibuat menggunakan konsep thread pool
+2. Tampilan untuk clock menggunakan thread pool, bukan schedulling
+3. Tampilan untuk message generator menggunakan scheduling
+
+_**Silakan kerjakan praktikum terlebih dahulu agar memahami konsep thread pool**_

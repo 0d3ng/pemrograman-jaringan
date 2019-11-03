@@ -201,7 +201,7 @@ seperti di bawah ini
         <figcaption style="text-align: center">Output</figcaption>
       </figure>
 
-### Tugas
+## Tugas
 Buatlah program dengan fungsi dan tampilan seperti di bawah ini
 <figure style="text-align: center">
     <img src="images/praktikum10-tugas.gif" alt="Tugas"/>
@@ -210,7 +210,7 @@ Buatlah program dengan fungsi dan tampilan seperti di bawah ini
 
 Kebutuhan program di atas adalah
 1. Dibuat menggunakan konsep thread pool
-2. Tampilan untuk clock menggunakan thread pool, bukan schedulling
+2. Tampilan untuk clock menggunakan thread pool dengan jumlah thread 10 , bukan schedulling
 3. Tampilan untuk message generator menggunakan scheduling
 
 _**Silakan kerjakan praktikum terlebih dahulu agar memahami konsep thread pool**_

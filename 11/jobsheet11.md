@@ -315,10 +315,13 @@ System.out.format("%s", endMessage);
 
 ## Tugas
 
+<!---
 _**Silakan kerjakan praktikum terlebih dahulu agar memahami konsep socket**_
+-->
 
 Buatlah aplikasi chat client seperti tampilan di bawah ini
 <figure style="text-align: center">
                   <img src="images/praktikum12-tugas.gif" alt="Tugas Socket"/>
                   <figcaption style="text-align: center">Tugas Socket</figcaption>
               </figure>
+**Silakan gunakan thread pool pada bagian servernya.**

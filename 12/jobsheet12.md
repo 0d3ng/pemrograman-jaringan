@@ -127,7 +127,7 @@ milidetik yang diperbolehkan untuk melakukan blok pada operasi pembacaan sebelum
 
 #### Mengirim Data UDP
 Langkah-langkah untuk mengirim datagram UDP ke sebuah server UDP :
-1. Buatlah Project dengan nama `JavaSenderUDP`.
+1. Buatlah class dengan nama `JavaSenderUDP`.
 2. Mengkonversi data yang mau dikirim ke dalam bentuk `array byte`
 3. Memasukkan `array byte` tadi, panjang data dalam array, dan `InetAddress` serta nomor port tujuan ke dalam 
 DatagramPacket lewat konstruktornya
@@ -147,7 +147,7 @@ memasukkan `DatagramPacket` yang telah dibuat.
 
 #### Menerima Data UDP
 Langkah untuk menerima datagram UDP dari klien adalah :
-1. Buatlah sebuah project dengan nama `JavaRecieveUDP`.
+1. Buatlah sebuah class dengan nama `JavaRecieveUDP`.
 2. Buatlah sebuah DatagramPacket kosong (`DatagramPacket` untuk menerima data)
 3. Buatlah objek `DatagramSocket` melalui konstruktornya (`DatagramSocket` untuk server)
 4. Lalu panggil method `receive()` dari datagramSocket dengan memasukkan `DatagramPacket` kosong yang telah dibuat tadi 
@@ -169,6 +169,14 @@ try {
     System.err.println(e);
 }
 ```
+
+>Class yang handle tentang pengiriman data pada protocol UDP terdapat pada class `DatagramPacket`, pada class tersebut 
+>data yang akan dikirimkan harus berupa `byte array`. Sementara kebutuhan kita berbagai tipe data yang harus dikirimkan
+>misalkan object dalam bentuk file, image, atau clas bentukan.
+>
+>Hal yang perlu dilakukan adalah mengubah object yang akan dikirimkan ke dalam bentuk byte array, sedangkan ketika
+>menerima dalam bentuk `byte array`, harus diubah ke dalam bentuk object. Yang terakhir dilakukan adalah mengubah object
+>ke dalam class bentukan dengan casting.
 
 ##### Pertanyaan
 

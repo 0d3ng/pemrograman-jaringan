@@ -16,23 +16,26 @@
 #### Konsep Multicast
 Multicast communication adalah proses pengiriman pesan dari sebuah proses kepada member-member yang ada dalam proses tersebut.
 Karakteristik multicast messages :
-• Toleransi kesalahan berdasarkan replika servis
+
+- Toleransi kesalahan berdasarkan replika servis
 Sebuah replika servis terdiri dari sekumpulan server. Permintaan klien akan dikirim secara multicast ke seluruh member 
 dalam sebuah proses. Sehingga ketika salah satu member mengalami kegagalan, maka permintaan klien akan tetap bisa 
 diproses oleh member yang lain.
-• Menemukan servis dalam jaringan spontan
+- Menemukan servis dalam jaringan spontan
 Pesan multicast dapat digunakan oleh server dan klien untuk menemukan servis dan mendaftarkan interface nya sendiri 
 ataupun mencari interface lain dalam suatu sistem terdistribusi.
-• Performansi lebih baik melalui replikasi data
+- Performansi lebih baik melalui replikasi data
 Replikasi adalah suatu teknik untuk melakukan copy dan pendistribusian data dan objek-objek database dari satu database 
 ke database lain dan melaksanakan sinkronisasi antara database sehingga konsistensi data dapat terjamin.
-• Data direplikasi untuk meningkatkan performansi servis.
-• Penyebaran notifikasi event
+- Data direplikasi untuk meningkatkan performansi servis.
+- Penyebaran notifikasi event
+
 IP multicast digunakan untuk menyampaikan satu paket kepada banyak penerima (sekumpulan komputer) yang tergabung dalam grup multicast.
 Alokasi alamat multicast :
 Alamat-alamat multicast IPv4 didefinisikan dalam ruang alamat kelas D, yakni 224.0.0.0/4, yang berkisar dari 224.0.0.0 
 hingga 224.255.255.255. Prefiks alamat 224.0.0.0/24 (dari alamat 224.0.0.0 hingga 224.0.0.255) tidak dapat digunakan 
 karena dicadangkan untuk digunakan oleh lalu lintas multicast dalam subnet local. Daftar alamat multicast yang ditetapkan oleh IANA.
+
 Pada JAVA, komunikasi multicast dilakukan menggunakan kelas – kelas :
 - DatagramPacket, dan
 - MulticastSocket yang merupakan subclass dari DatagramSocket 

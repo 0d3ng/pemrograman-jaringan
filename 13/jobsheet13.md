@@ -266,7 +266,7 @@ Untuk bekerja menggunakan MulticastSocket, kita bisa menggunakan method-method y
 
 ### Tugas
 1. Buatlah aplikasi berbasis GUI untuk mengirimkan pesan dari satu komputer ke semua komputer yang ada di lab!
-2. Buatlah program berbasis GUI untul menampilkan semua pesan yang dikirim dari client ke server dalam satu tampilan!
+2. Buatlah program berbasis GUI untuk menampilkan semua pesan yang dikirim dari client ke server dalam satu tampilan!
 3. Buatlah aplikasi berbasis GUI untuk mengirimkan file txt dari satu computer ke semua komputer yang ada di Lab!
 
 

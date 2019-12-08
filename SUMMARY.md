@@ -17,3 +17,5 @@
 * [13. Pemrograman User Datagram Protocol (UDP)](12/jobsheet12.md)
 * [14. Kuis]()
 * [15. Multicast](13/jobsheet13.md)
+* [16. Uniform Resource Locator](14/jobsheet14.md)
+* [17. UAS]()

@@ -161,8 +161,6 @@ dengan tag `div` dan `class product-item`. Untuk dapat menggunakan jsoup secara 
 `https://jsoup.org/cookbook/`
 
 ##### Pertanyaan
-Silakan cari website e-commerce yang lain, kemudian lakukan `crawling` agar lebih faham menggunakan jsoup
-
-
-
-
+1. Jika kita lihat, halaman yang ditampilkan sebelumnya menampilkan produk dalam 1 halaman sedangkan sebenarnya terdiri
+dari beberapa halaman. Modifikasi program tersebut sehingga bisa menampilkan semua produknya.
+2. Silakan cari website e-commerce yang lain, kemudian lakukan `crawling` agar lebih faham menggunakan jsoup

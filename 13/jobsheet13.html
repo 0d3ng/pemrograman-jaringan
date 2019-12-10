@@ -1,0 +1,726 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>15. Multicast · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../14/jobsheet14.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="jobsheet13.html">
+            
+                <a href="jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >15. Multicast</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="multicast">MULTICAST</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami dan mengerti komunikasi multicast </li>
+<li>Menerapkan komunikasi multicast pada aplikasi</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="konsep-multicast">Konsep Multicast</h4>
+<p>Multicast communication adalah proses pengiriman pesan dari sebuah proses kepada member-member yang ada dalam proses tersebut.
+Karakteristik multicast messages :</p>
+<ul>
+<li>Toleransi kesalahan berdasarkan replika servis
+Sebuah replika servis terdiri dari sekumpulan server. Permintaan klien akan dikirim secara multicast ke seluruh member 
+dalam sebuah proses. Sehingga ketika salah satu member mengalami kegagalan, maka permintaan klien akan tetap bisa 
+diproses oleh member yang lain.</li>
+<li>Menemukan servis dalam jaringan spontan
+Pesan multicast dapat digunakan oleh server dan klien untuk menemukan servis dan mendaftarkan interface nya sendiri 
+ataupun mencari interface lain dalam suatu sistem terdistribusi.</li>
+<li>Performansi lebih baik melalui replikasi data
+Replikasi adalah suatu teknik untuk melakukan copy dan pendistribusian data dan objek-objek database dari satu database 
+ke database lain dan melaksanakan sinkronisasi antara database sehingga konsistensi data dapat terjamin.</li>
+<li>Data direplikasi untuk meningkatkan performansi servis.</li>
+<li>Penyebaran notifikasi event</li>
+</ul>
+<p>IP multicast digunakan untuk menyampaikan satu paket kepada banyak penerima (sekumpulan komputer) yang tergabung dalam grup multicast.
+Alokasi alamat multicast :
+Alamat-alamat multicast IPv4 didefinisikan dalam ruang alamat kelas D, yakni 224.0.0.0/4, yang berkisar dari 224.0.0.0 
+hingga 224.255.255.255. Prefiks alamat 224.0.0.0/24 (dari alamat 224.0.0.0 hingga 224.0.0.255) tidak dapat digunakan 
+karena dicadangkan untuk digunakan oleh lalu lintas multicast dalam subnet local. Daftar alamat multicast yang ditetapkan oleh IANA.</p>
+<p>Pada JAVA, komunikasi multicast dilakukan menggunakan kelas &#x2013; kelas :</p>
+<ul>
+<li>DatagramPacket, dan</li>
+<li>MulticastSocket yang merupakan subclass dari DatagramSocket </li>
+</ul>
+<h4 id="multicast-socket">Multicast Socket</h4>
+<p>Paket MulticastSocket terletak pada java.net.MulticastSocket. Cara kerjanya mirip dengan DatagramSocket, karena memang 
+turunan dari kelas DatagramSocket.
+Konstruktor :</p>
+<ol>
+<li><code>public MulticastSocket( ) throws SocketException</code> : membuat objek multicastSocket yang terikat pada anonymous port 
+(terserah alokasi dari sistem), cocok untuk klien dimana tidak membutuhkan port khusus/tertentu untuk menerima jawaban dari server yang dihubungi.
+Contoh :<pre><code class="lang-java"> <span class="hljs-keyword">try</span> {
+   MulticastSocket ms = <span class="hljs-keyword">new</span> MulticastSocket( );
+   <span class="hljs-comment">// send some datagrams...</span>
+ }
+ <span class="hljs-keyword">catch</span> (SocketException se) {
+   System.err.println(se);
+ }
+</code></pre>
+</li>
+<li><code>public MulticastSocket(int port) throws SocketException</code> membuat objek MulticastSocket untuk menerima datagram dari 
+port yang ditentukan.
+Contoh :<pre><code class="lang-java"> <span class="hljs-keyword">try</span> {
+   MulticastSocket ms = <span class="hljs-keyword">new</span> MulticastSocket(<span class="hljs-number">40</span>
+   <span class="hljs-comment">// receive incoming datagrams...</span>
+ }
+ <span class="hljs-keyword">catch</span> (SocketException ex) {
+   System.err.println(ex);
+ }
+</code></pre>
+</li>
+<li><code>public MulticastSocket(SocketAddress bindAddress) throws IOException</code> : membuat objek MulticastSocket menggunakan 
+objek SocketAddress. Jika SocketAddress nya adalah objek yang mengikat alamat port tertentu, maka konstruktor ini akan 
+sama persis dengan konstruktor sebelumnya. <pre><code class="lang-java"> Contoh :
+ <span class="hljs-keyword">try</span> {
+     SocketAddress address = <span class="hljs-keyword">new</span> InetSocketAddress(<span class="hljs-number">4000</span>);
+     MulticastSocket ms = <span class="hljs-keyword">new</span> MulticastSocket(address);
+  <span class="hljs-comment">// receive incoming datagrams...</span>
+ }
+ <span class="hljs-keyword">catch</span> (SocketException ex) {
+  System.err.println(ex);
+ }
+</code></pre>
+Jika objek SocketAddress terikat pada alamat dan port dari sebuah interace, maka multicastSocket hanya akan menerima 
+data dari port dan alamat interface yang ditentukan (contoh kasus server yang memiliki banyak interface network). 
+Contoh :<pre><code class="lang-java"> <span class="hljs-keyword">try</span> {
+ SocketAddress address = <span class="hljs-keyword">new</span> InetSocketAddress(<span class="hljs-string">&quot;192.168.254.32&quot;</span>, <span class="hljs-number">4000</span>);
+     MulticastSocket ms = <span class="hljs-keyword">new</span> MulticastSocket(address);
+   <span class="hljs-comment">// receive incoming datagrams...</span>
+ }
+ <span class="hljs-keyword">catch</span> (SocketException ex) {
+     System.err.println(ex);
+ }
+</code></pre>
+</li>
+</ol>
+<p>Begitu objek MulticastSocket terbentuk, ada 4 operasi yang bisa dilakukan oleh objek ini :</p>
+<ol>
+<li>Join ke sebuah grup multicast.</li>
+<li>Mengirim data ke grup multicast</li>
+<li>Menerima data dari grup multicast</li>
+<li>Meninggalkan grup multicast.</li>
+</ol>
+<p>Untuk bekerja menggunakan MulticastSocket, kita bisa menggunakan method-method yang dimilikinya :</p>
+<ol>
+<li><code>public void joinGroup(InetAddress address) throws IOException</code></li>
+<li><code>public void joinGroup(SocketAddress address, NetworkInterface interface) throws IOException // Java 1.4</code></li>
+<li><code>public void leaveGroup(InetAddress address) throws IOException</code></li>
+<li><code>public void leaveGroup(InetAddress address) throws IOException</code></li>
+<li><code>public void leaveGroup(SocketAddress multicastAddress, NetworkInterface  interface)throws IOException // Java 1.4</code></li>
+<li><code>public void send(DatagramPacket packet, byte ttl)throws IOException</code></li>
+<li><code>public void setInterface(InetAddress address)throws SocketException</code></li>
+<li><code>public InetAddress getInterface( ) throws SocketException</code></li>
+<li><code>public void setNetworkInterface(NetworkInterface interface)throws SocketException // Java 1.4</code></li>
+<li><code>public NetworkInterface getNetworkInterface( ) throws SocketException // Java 1.4</code></li>
+<li><code>public void setTimeToLive(int ttl) throws IOException // Java 1.2</code></li>
+<li><code>public void setTimeToLive(int ttl) throws IOException // Java 1.2</code></li>
+<li><code>public void setLoopbackMode(boolean disable) throws SocketException</code></li>
+<li><code>public boolean getLoopbackMode( ) throws SocketException</code></li>
+<li><code>receive()</code></li>
+</ol>
+<h3 id="langkah-langkah-praktikum">Langkah-langkah Praktikum</h3>
+<h4 id="program-server">Program Server</h4>
+<ol>
+<li>Buatlah Project baru dengan class ChatServer.</li>
+<li>Tuliskan perintah berikut:<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChatServer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> Exception </span>{
+       MulticastSocket server = <span class="hljs-keyword">new</span> MulticastSocket(<span class="hljs-number">1234</span>);
+       InetAddress group = InetAddress.getByName(<span class="hljs-string">&quot;234.5.6.7&quot;</span>);
+       <span class="hljs-comment">//getByName &#x2013; Mengembalikan alamat IP yang diberikan oleh Host</span>
+       server.joinGroup(group);
+       <span class="hljs-keyword">boolean</span> infinite = <span class="hljs-keyword">true</span>;
+       <span class="hljs-comment">/* Server terus-menerus menerima data dan mencetak mereka */</span>
+       <span class="hljs-keyword">while</span>(infinite) {
+          <span class="hljs-keyword">byte</span> buf[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];
+          DatagramPacket data = <span class="hljs-keyword">new</span> DatagramPacket(buf,
+                                                buf.length);
+          server.receive(data);
+          String msg = <span class="hljs-keyword">new</span> String(data.getData()).trim();
+          System.out.println(msg);
+       }
+       server.close();
+    }
+ }
+</code></pre>
+</li>
+<li>Jalankan program tersebut!</li>
+</ol>
+<h4 id="program-chat-client">Program Chat Client</h4>
+<ol>
+<li>Buatlah project baru dengan nama class ChatClient.</li>
+<li><p>Tuliskan program berikut:</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChatClient</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> Exception </span>{
+       MulticastSocket chat = <span class="hljs-keyword">new</span> MulticastSocket(<span class="hljs-number">1234</span>);
+
+ }
+       InetAddress group = InetAddress.getByName(<span class="hljs-string">&quot;234.5.6.7&quot;</span>);
+       chat.joinGroup(group);
+       String msg = <span class="hljs-string">&quot;&quot;</span>;
+       System.out.println(<span class="hljs-string">&quot;Type a message for the server:&quot;</span>);
+       BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span>
+                               InputStreamReader(System.in));
+       msg = br.readLine();
+       DatagramPacket data = <span class="hljs-keyword">new</span> DatagramPacket(msg.getBytes(),
+        <span class="hljs-number">0</span>, msg.length(), group, <span class="hljs-number">1234</span>);
+       chat.send(data);
+       chat.close();
+   }
+</code></pre>
+</li>
+<li>Jalankan program tersebut.</li>
+</ol>
+<h4 id="program-multicastsniffer-menggunakan-argument">Program MulticastSniffer menggunakan argument</h4>
+<ol>
+<li>Buatlah project dengan class MulcastSniffer.</li>
+<li>Tuliskan perintah berikut:<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MulticastSniffer</span> </span>{
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+ InetAddress group = <span class="hljs-keyword">null</span>;
+ <span class="hljs-keyword">int</span> port = <span class="hljs-number">0</span>;
+ <span class="hljs-comment">// read the address from the command line</span>
+ <span class="hljs-keyword">try</span> {
+ group = InetAddress.getByName(args[<span class="hljs-number">0</span>]);
+ port = Integer.parseInt(args[<span class="hljs-number">1</span>]);
+ }
+ <span class="hljs-comment">// end try</span>
+ <span class="hljs-keyword">catch</span> (Exception ex) {
+ <span class="hljs-comment">// ArrayIndexOutOfBoundsException, NumberFormatException,</span>
+ <span class="hljs-comment">// or UnknownHostException</span>
+ System.err.println(
+ <span class="hljs-string">&quot;Usage: java MulticastSniffer multicast_address port&quot;</span>);
+ System.exit(<span class="hljs-number">1</span>);
+ }
+ MulticastSocket ms = <span class="hljs-keyword">null</span>;
+ <span class="hljs-keyword">try</span> {
+ ms = <span class="hljs-keyword">new</span> MulticastSocket(port);
+ ms.joinGroup(group);
+ <span class="hljs-keyword">byte</span>[] buffer = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">8192</span>];
+ <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+ DatagramPacket dp = <span class="hljs-keyword">new</span> DatagramPacket(buffer,
+ buffer.length);
+ ms.receive(dp);
+ String s = <span class="hljs-keyword">new</span> String(dp.getData( ));
+ System.out.println(s);
+ }
+ }
+ <span class="hljs-keyword">catch</span> (IOException ex) {
+ System.err.println(ex);
+ }
+ <span class="hljs-keyword">finally</span> {
+ <span class="hljs-keyword">if</span> (ms != <span class="hljs-keyword">null</span>) {
+ <span class="hljs-keyword">try</span> {
+ ms.leaveGroup(group);
+ ms.close( );
+ }
+ <span class="hljs-keyword">catch</span> (IOException ex) {}
+ }
+ }
+ }
+ }
+</code></pre>
+</li>
+<li>Compile project tersebut.</li>
+</ol>
+<h4 id="program-multicastsender-menggunakan-argument">Program MulticastSender menggunakan argument</h4>
+<ol>
+<li>Buatlah project dengan class MulticastSender.</li>
+<li>Tulislah perintah berikut:<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MulticastSender</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+  InetAddress ia = <span class="hljs-keyword">null</span>;
+  <span class="hljs-keyword">int</span> port = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">byte</span> ttl = (<span class="hljs-keyword">byte</span>) <span class="hljs-number">1</span>;
+  <span class="hljs-comment">// read the address from the command line</span>
+  <span class="hljs-keyword">try</span> {
+    ia = InetAddress.getByName(args[<span class="hljs-number">0</span>]);
+    port = Integer.parseInt(args[<span class="hljs-number">1</span>]);
+    <span class="hljs-keyword">if</span> (args.length &gt; <span class="hljs-number">2</span>) ttl = (<span class="hljs-keyword">byte</span>) Integer.parseInt(args[<span class="hljs-number">2</span>]);
+  }
+  <span class="hljs-keyword">catch</span> (Exception ex)  {
+    System.err.println(ex);
+    System.err.println(
+     <span class="hljs-string">&quot;Usage: java MulticastSender multicast_address port ttl&quot;</span>);
+    System.exit(<span class="hljs-number">1</span>);
+  }
+  <span class="hljs-keyword">byte</span>[] data = <span class="hljs-string">&quot;Here&apos;s some multicast data\r\n&quot;</span>.getBytes( );
+  DatagramPacket dp = <span class="hljs-keyword">new</span> DatagramPacket(data, data.length, ia, port);
+  <span class="hljs-keyword">try</span> {
+    MulticastSocket ms = <span class="hljs-keyword">new</span> MulticastSocket( );
+    ms.joinGroup(ia);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
+      ms.send(dp, ttl);
+    }
+    ms.leaveGroup(ia);
+    ms.close( );
+  }
+  <span class="hljs-keyword">catch</span> (SocketException ex) {
+    System.err.println(ex);
+  }
+  <span class="hljs-keyword">catch</span> (IOException ex) {
+    System.err.println(ex);
+  }
+}
+}
+</code></pre>
+</li>
+<li>Compile project tersebut.</li>
+</ol>
+<h3 id="tugas">Tugas</h3>
+<ol>
+<li>Buatlah aplikasi berbasis GUI untuk mengirimkan pesan dari satu komputer ke semua komputer yang ada di lab!</li>
+<li>Buatlah program berbasis GUI untuk menampilkan semua pesan yang dikirim dari client ke server dalam satu tampilan!</li>
+<li>Buatlah aplikasi berbasis GUI untuk mengirimkan file txt dari satu computer ke semua komputer yang ada di Lab!</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../14/jobsheet14.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 16. Uniform Resource Locator">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"15. Multicast","level":"1.17","depth":1,"next":{"title":"16. Uniform Resource Locator","level":"1.18","depth":1,"path":"14/jobsheet14.md","ref":"14/jobsheet14.md","articles":[]},"previous":{"title":"14. Kuis","level":"1.16","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"13/jobsheet13.md","mtime":"2019-12-10T04:56:20.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

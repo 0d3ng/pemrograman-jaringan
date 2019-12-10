@@ -1,0 +1,703 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10. Thread · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../10/jobsheet10.html" />
+    
+    
+    <link rel="prev" href="../08/jobsheet08.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="jobsheet09.html">
+            
+                <a href="jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10. Thread</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="thread">Thread</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami konsep <code>Thread</code></li>
+<li>Dapat membuat <code>Thread</code> menggunakan bahasa pemrograman Java</li>
+<li>Menerapkan <code>Thread</code> untuk kasus-kasus dalam pemrograman jaringan</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="thread">Thread</h4>
+<p>Sebuah komputer umumnya di dalamnya terdapat processor multi core untuk mempercepat proses komputasi, selain dengan 
+dukungan perangkat keras perlu dukungan juga perangkat lunak untuk memaksimalkan multi core tersebut. Java adalah salah 
+satu bahasa pemrograman yang menyediakan fungsi multi threading.</p>
+<p>Misalkan ada sebuah aplikasi jual beli yang memiliki fungsi kompleks sebagai berikut</p>
+<ul>
+<li>Melakukan download stock terakhir dari semua barang di semua cabang</li>
+<li>Melakukan pengecekan harga barang</li>
+<li>Menganalisis data historis untuk perusahaan xyz</li>
+</ul>
+<p>Proses di atas butuh waktu lama untuk menjalankannya, jika digunakan sebuah single thread maka proses satu akan selesai
+setelah proses yang lain selesai. Proses selanjutnya dapat dijalankan ketika proses yang sebelumnya sudah selesai.</p>
+<p>Jika untuk melakukan analisis data historis membutuhkan waktu 0.5 jam, selanjutnya seorang pengguna ingin download 
+ketersediaan barang di gudang dan tentunya info harga barang akan telat disampaikan ke pembeli atau konsumen. Idealnya, 
+proses - proses di atas dilakukan oleh thread - thread yang berbeda sehingga tidak mengakibatkan saling tunggu proses
+yang satu dengan proses yang lain.</p>
+<blockquote>
+<p>Sebuah thread sebenarnya adalah sebuar proses yang ringan. Tidak seperti bahasa pemrograman yang lain Java menyediakan
+dukuangan untuk multihreaded, sebuah multithreaded terdiri dari satu atau lebih bagian yang dapat dijalankan secara
+bersamaan. Masing-masing bagian dari sebuah program disebut dengan thread dan masing-masing thread secara terpisah
+untuk menjalankannya.</p>
+</blockquote>
+<h4 id="life-cycle-thread">Life Cycle Thread</h4>
+<figure style="text-align: center">
+                  <img src="images/Life_cycle_of_a_Thread_in_Java.jpg" alt="Life cycle thread">
+                  <figcaption style="text-align: center">https://www.baeldung.com/java-thread-lifecycle</figcaption>
+              </figure>
+
+<p>Pada class <code>java.lang.Thread</code> terdapat sebuah <code>static State enum</code>, yang mendefinisikan kemungkinan sebuah state atau
+kondisi sebuah thread. Kondisi thread tersebut adalah sebagai berikut</p>
+<ol>
+<li><code>NEW</code> - kondisi ketika sebuah thread dibuat atau diciptakan</li>
+<li><code>RUNNABLE</code> - kondisi ketika sebuah thread berjalan</li>
+<li><code>BLOCKED</code> - menunggu untuk mendapatkan notifikasi sebuah thread berjalan kembali</li>
+<li><code>WAITING</code> - menunggu thread yang lain untuk menjalankan operasi tertentu tanpa batas waktu ditentukan</li>
+<li><code>TIMED_WAITING</code> - menunggu thread yang lain untuk menjalankan operasi tertentu dengan waktu ditentukan</li>
+<li><code>TERMINATED</code> - sebuah thread telah selesai menjalankan operasi</li>
+</ol>
+<h4 id="konstuktor-thread">Konstuktor Thread</h4>
+<p>Thread memiliki 8 konstuktor, dan yang paling sederhana adalah sebagai berikut</p>
+<ol>
+<li><code>Thread()</code>, membuat sebuah thread dengan nama bawaan</li>
+<li><code>Thread(String nama)</code>, membuat sebuah thread dengan nama tertentu</li>
+</ol>
+<h4 id="methode-thread">Methode Thread</h4>
+<p>Berikut ini adalah methode yang terdapat pada <code>class Thread</code></p>
+<ol>
+<li><code>public void start()</code>, menjalankan thread dan memanggil methode <code>run()</code> pada objek <code>Thread</code></li>
+<li><code>public void run()</code>, methode yang harus dioverride ketika <code>extends class Thread</code> dan harus diimplementasi ketika
+<code>implements interface Runnable</code> </li>
+<li><code>public final void setName(String name)</code>, mengeset nama sebuah object thread</li>
+<li><code>public final void setPriority(int priority)</code>, mengeset prioritas dari sebuah thread. Nilai prioritas antara 1-10.</li>
+<li><code>public final void setDaemon(boolean on)</code>, mengeset apakah thread dijadikan sebuah daemon. Daemon adalah aplikasi yang
+berjalan sebagai background</li>
+<li><code>public final void join(long millisec)</code>, digunakan untuk menggabungkan sebuah thread. Thread yang bergabung harus
+thread yang lain atau sebelumnya menyelesaikan tugasnya dan terminated.</li>
+<li><code>public void interrupt()</code>, melakukan interrupt sebuah thread dengan meneruskan untuk mengerjakan sebuah proses</li>
+<li><code>public final boolean isAlive()</code>, mengecek apakah thread masih jalan atau tidak</li>
+</ol>
+<h4 id="membuat-thread">Membuat Thread</h4>
+<p>Untuk membuat Thread dapat dilakukan dengan 2 cara yaitu</p>
+<ol>
+<li><p>Implementasi <code>interface Runnable</code></p>
+<p>Cara yang paling mudah adalah dengan membuat class dengan implementasi <code>interface Runnable</code>, sebuah class hanya cukup
+mengimplemntasi satu mehode yaitu <code>run()</code>. 
+Contoh:</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span></span>{
+    System.out.println(<span class="hljs-string">&quot;Hello Thread&quot;</span>);
+    } 
+ }
+</code></pre>
+<p>Untuk menjalankan method <code>run()</code> oleh sebuah thread, yang perlu dilakukan adalah melewatkan <code>instance MyClass</code> pada
+sebuah kontruktor <code>Thread</code>.</p>
+<pre><code class="lang-java"> Thread t1 = <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> MyClass()); 
+ t1.start();
+</code></pre>
+<p>Ketika thread mulai maka akan memanggil method <code>run()</code> dari <code>class MyClass</code> dan akan menampilkan <code>Hello Thread</code></p>
+</li>
+<li><p>Menurunkan <code>class Thread</code></p>
+<p>Cara yang kedua adalah dengan membuat class yang menurunkan <code>class Thread</code>, kemudian mengoverride methode <code>run()</code>
+dan menginstansiasi class tersebut. Method <code>run()</code> akan dijalankan oleh thread ketika memanggil method <code>start()</code>.
+Contohnya adalah di bawah ini</p>
+<pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span></span>{
+       System.out.println(<span class="hljs-string">&quot;Hello Thread&quot;</span>);
+       } 
+    }
+</code></pre>
+<p>Untuk membuat thread dan menjalankan dapat dilihat pada potongan kode di bawah ini</p>
+<pre><code class="lang-java">MyClass t1 = <span class="hljs-keyword">new</span> MyClass(); 
+t1.start();
+</code></pre>
+<p>Ketika method <code>run()</code> dijalankan maka akan menampilkan <code>Hello Thread</code>.</p>
+<blockquote>
+<p>Selain cara di atas, sebenarnya ada cara lagi yaitu dengan instance class Thread dan melewatkan interface Runnable
+pada konstruktor. Tetapi model ini disarankan ketika berfungsi hanya untuk menjalankan operasi yang sederhan dan
+kita tidak bisa mengontrol thread tersebut.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> Runnable() {
+            <span class="hljs-meta">@Override</span>
+           <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                System.out.println(<span class="hljs-string">&quot;Hello Thread&quot;</span>);
+            }
+       }).start();
+</code></pre>
+<p>Jika dijalankan maka akan menampilkan <code>Hello Thread</code></p>
+</blockquote>
+</li>
+</ol>
+<h3 id="praktikum">Praktikum</h3>
+<h4 id="praktikum-1">Praktikum 1</h4>
+<ol>
+<li><p>Buatlah kode seperti di bawah ini untuk membuat sebuah Thread dengan <code>implements Runnable</code></p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThreadOne</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> String name;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ThreadOne</span><span class="hljs-params">(String name)</span> </span>{
+         <span class="hljs-keyword">this</span>.name = name;
+     }
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+             System.out.println(name + <span class="hljs-string">&quot;: &quot;</span> + i);
+             <span class="hljs-keyword">try</span> {
+                 Thread.sleep(<span class="hljs-number">100</span>);
+             } <span class="hljs-keyword">catch</span> (InterruptedException ex) {
+                 Logger.getLogger(ThreadOne.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         }
+     }
+
+ }
+</code></pre>
+</li>
+<li><p>Selanjutnya buat kode di bawah ini untuk membuat thread dengan <code>extends class Thread</code></p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThreadTwo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+             System.out.println(getName() + <span class="hljs-string">&quot;: &quot;</span> + i);
+             <span class="hljs-keyword">try</span> {
+                 sleep(<span class="hljs-number">100</span>);
+             } <span class="hljs-keyword">catch</span> (InterruptedException ex) {
+                 Logger.getLogger(ThreadTwo.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         }
+     }
+
+ }
+</code></pre>
+</li>
+<li>Kemudian buat main thread untuk memanggil kedua thread yang telah kita buat sebelumnya<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Praktikum1</span> </span>{
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+         Thread t = <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> ThreadOne(<span class="hljs-string">&quot;Thread Satu&quot;</span>));
+         t.start();
+         ThreadTwo t2 = <span class="hljs-keyword">new</span> ThreadTwo();
+         t2.setName(<span class="hljs-string">&quot;Thread Dua&quot;</span>);
+         t2.start();
+     }
+ }
+</code></pre>
+</li>
+<li>Silakan jalankan kode yang telah Anda buat, amati dan pelajari hasilnya!</li>
+</ol>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Apakah fungsi dari methode <code>sleep()</code>?</li>
+<li>Sebutkan keuntungan dan kelemahan menciptakan sebuah thread dengan <code>extends class Thread</code> dan <code>implement interface
+Runnable</code>?</li>
+</ol>
+<h4 id="praktikum-2">Praktikum 2</h4>
+<ol>
+<li><p>Buatlah class sebagai berikut</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Generator</span> </span>{
+
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> low, high;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Generator</span><span class="hljs-params">(<span class="hljs-keyword">int</span> low, <span class="hljs-keyword">int</span> high)</span> </span>{
+         <span class="hljs-keyword">this</span>.low = low;
+         <span class="hljs-keyword">this</span>.high = high;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">synchronized</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateRandomNumber</span><span class="hljs-params">(String name)</span> </span>{
+         Random r = <span class="hljs-keyword">new</span> Random();
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+             <span class="hljs-keyword">int</span> result = r.nextInt(high - low) + low;
+             System.out.println(name + <span class="hljs-string">&quot;: &quot;</span> + result);
+             <span class="hljs-keyword">try</span> {
+                 Thread.sleep(<span class="hljs-number">100</span>);
+             } <span class="hljs-keyword">catch</span> (InterruptedException ex) {
+                 Logger.getLogger(Generator.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         }
+     }
+
+ }
+</code></pre>
+</li>
+<li>Buatlah sebuah thread, silakan menggunakan <code>extends class Thread atau implement interface Runnable</code></li>
+<li>Buatlah instance variabel <code>Generator</code> pada thread yang Anda buat</li>
+<li>Tambahkan kode <code>generator.generateRandomNumber(getName())</code> pada method <code>run()</code></li>
+<li><p>Jalankan thread yang anda buat dengan menambahkan</p>
+<ul>
+<li>Instance <code>Generator</code>, lewatkan nilai 10 dan 100</li>
+<li>Buatlah 2 instance thread yang Anda buat.</li>
+<li><p>Jalankan masing-masing thread tersebut dengan memanggil methode <code>start()</code>.
+Output yang diharapkan adalah sebagai berikut</p>
+<p><figure style="text-align: center">
+  <img src="images/09-01.png" alt="Life cycle thread">
+  <figcaption style="text-align: center">Output</figcaption>
+</figure>    </p>
+<h4 id="pertanyaan">Pertanyaan</h4>
+</li>
+</ul>
+</li>
+<li><code>Class Generator</code> digunakan untuk apa?</li>
+<li>Apakah fungsi kata kunci <code>synchronized</code> pada <code>class Generator</code>?</li>
+</ol>
+<h3 id="tugas">Tugas</h3>
+<p>Buatlah program dengan fungsi dan tampilan seperti di bawah ini</p>
+<figure style="text-align: center">
+    <img src="images/praktikum09-tugas.gif" alt="Life cycle thread">
+    <figcaption style="text-align: center">Tugas</figcaption>
+</figure>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../08/jobsheet08.html" class="navigation navigation-prev " aria-label="Previous page: 9. Object Persistence dan Object Serialization">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../10/jobsheet10.html" class="navigation navigation-next " aria-label="Next page: 11. Thread Pool">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10. Thread","level":"1.12","depth":1,"next":{"title":"11. Thread Pool","level":"1.13","depth":1,"path":"10/jobsheet10.md","ref":"10/jobsheet10.md","articles":[]},"previous":{"title":"9. Object Persistence dan Object Serialization","level":"1.11","depth":1,"path":"08/jobsheet08.md","ref":"08/jobsheet08.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"09/jobsheet09.md","mtime":"2019-12-10T04:56:20.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

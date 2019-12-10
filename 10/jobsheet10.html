@@ -1,0 +1,677 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11. Thread Pool · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../11/jobsheet11.html" />
+    
+    
+    <link rel="prev" href="../09/jobsheet09.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="jobsheet10.html">
+            
+                <a href="jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11. Thread Pool</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="thread-pool">Thread Pool</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami konsep <code>Thread Pool</code></li>
+<li>Dapat membuat <code>Thread Pool</code> menggunakan bahasa pemrograman Java</li>
+<li>Menerapkan <code>Thread Pool</code> untuk kasus-kasus dalam pemrograman jaringan</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="thread-pool">Thread Pool</h4>
+<p>Ketika kita membuat aplikasi concurrent di Java langkah yang dilakukan adalah dengan membuat beberapa objek <code>Runnable</code>
+dan membuat sebuah <code>Thread</code> juga untuk menjalankannya. Sebenarnya untuk menciptakan sebuah thread di Java adalah hal
+yang mahal karena akan memakan resource yang tersedia, ketika kita membuat sebuah thread aplikasi yang kita buat akan
+mengalami penurunan performa yang signifikan.</p>
+<p>Misalkan aplikasi server seperti database atau web server akan menerima request dari banyak client, hal tersebut
+tentunya membutuhkan banyak pemprosesan tetapi membutuhkan waktu yang singkat. Hal yang dapat kita lakukan dari kasus
+tersebut adalah dengan membangun aplikasi server yang membuat sebuah thread baru ketika ada request dari client. Hal
+tersebut bisa dilakukan, tetapi tidak menguntungkan atau maksimal karena ketika sebuah server menciptakan thread setiap
+kali request akan membutuhkan waktu lebih dan akan menggunakan resource system yang lebih juga. Selain itu, mematikan
+thread juga tidak mudah.</p>
+<p>Sebuah thread yang aktif akan menggunakan resource system, sebuah JVM ketika sedang membuat terlalu banyak thread dalam 
+waktu yang bersamaan dapat menimbulkan <code>system out of memory</code> sehingga aplikasi akan hang atau bahkan crash. Untuk
+menanggulangi hal tersebut dibutuhkan limitasi jumlah thread yang akan dibuat dalam sebuah aplikasi.</p>
+<p><code>Thread Pool</code> akan menggunakan kembali thread sebelumnya yang telah diciptakan untuk menjalankan tugas saat ini, 
+hal ini menawarkan sebuah solusi untuk permasalahan di atas. </p>
+<figure style="text-align: center">
+                  <img src="images/thread-pool.png" alt="Konsep Thread Pool">
+                  <figcaption style="text-align: center">https://www.baeldung.com/thread-pool-java-and-guava</figcaption>
+              </figure>
+
+<p>Beberapa istilah dari gambar di atas adalah sebagai berikut</p>
+<ol>
+<li><code>Task Submitters</code>, sebuah class biasa atau main thread yang berfungsi untuk memasukan antrian task atau tugas tertentu
+ke dalam <code>Task Queue</code>.</li>
+<li><code>Executor Service</code>, bagian atau wadah yang di dalamnya sebuah <code>Task Queue</code> dan <code>Thread Pool</code>. Pada bagian ini disediakan
+oleh Java pada paket <code>java.util.concurrent</code></li>
+<li><code>Task Queue</code>, antrian task yang akan dikerjakan oleh thread</li>
+<li><code>Thread Pool</code>, kumpulan thread yang siap menjalankan task tertentu</li>
+</ol>
+<p>Java menyediakan <code>Executor Framework</code>, yaitu sebuah interface pada <code>java.util.concurrent.Executors</code> yang menurunkan <code>interface ExecutorService</code> dan <code>ThreadPoolExecutor</code></p>
+<h4 id="methode-executor-thread-pool">Methode Executor Thread Pool</h4>
+<ol>
+<li><code>newFixedThreadPool(int n)</code>, membuat thread pool dengan jumlah yang telah ditentukan. <code>n</code> adalah jumlah thread yang
+akan dibuat.</li>
+<li><code>newCachedThreadPool()</code>, membuat thread pool dengan jumlah thread sesuai dengan kebutuhan. Ketika menjalankan task
+akan menggunakan thread yang sebelumnya ketika tersedia. </li>
+<li><code>newSingleThreadExecutor()</code>, hanya membuat single thread.</li>
+</ol>
+<blockquote>
+<p>Khusus untuk <code>newCachedThreadPool()</code> tidak disarankan ketika task yang dijalankan terlalu lama, hal tersebut akan
+mengakibatkan system down karena terlalu banyak thread yang dibuat.</p>
+</blockquote>
+<p>Langkah-langkah yang dapat dilakukan untuk menggunakan <code>Thread Pool</code> adalaha sebagai berikut</p>
+<ol>
+<li>Buat sebuah task(objek <code>Runnable</code>) yang akan dieksekusi, kelas dengan yang mengimplement <code>interface Runnable</code>. </li>
+<li>Buat sebuah <code>Executor Pool</code> menggunakan <code>Executors</code>, instance variabel boleh menggunakan <code>ExecutorService</code> atau
+<code>ThreadPoolExecutor</code>. Ketika menggunakan <code>ThreadPoolExecutor</code> harus dilakukan casting seperti contoh di bawah ini<pre><code class="lang-java"> ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(<span class="hljs-number">2</span>);
+</code></pre>
+</li>
+<li>Lewatkan <code>Task</code> melalui <code>Executor Pool</code></li>
+<li>Jangan lupa untuk mematikan <code>Executor Pool</code></li>
+</ol>
+<h4 id="interface-scheduledexecutorservice"><code>interface ScheduledExecutorService</code></h4>
+<p>Merupakan sebuah <code>interface</code> yang digunakan untuk menjalankan task atau tugas dengan kebutuhan secara periode dan jeda
+waktu tertentu setelah pendefinisian. Model thread yang dibuat mirip dengan <code>ExecutorService</code>, karena interface tersebut
+merupakan turunannya. Contoh pendefinisiannya adalah sebagai berikut</p>
+<pre><code class="lang-java">ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+</code></pre>
+<h5 id="method-interface-scheduledexecutorservice">Method <code>interface ScheduledExecutorService</code></h5>
+<p>Method yang umumnya dapat digunakan pada <code>interface</code> tersebut adalah di bawah ini </p>
+<ol>
+<li><code>public &lt;V&gt; ScheduledFuture&lt;V&gt; schedule(Callable&lt;V&gt; callable, long delay, TimeUnit unit)</code>, digunakan untuk
+menjadwalkan task atau tugas dengan delay waktu tertentu. Task yang akan dijalankan dapat memiliki nilai kembali ketika
+task selesai dijalankan.</li>
+<li><code>public ScheduledFuture&lt;?&gt; schedule(Runnable command, long delay, TimeUnit unit)</code>, digunakan untuk menjadwalkan task
+dengan jeda atau delay tertentu. Task yang dijalankan tidak dapat mengembalikan nilai tertentu </li>
+<li><code>public ScheduledFuture&lt;?&gt; scheduleAtFixedRate(Runnable command, long initialDelay, long period, TimeUnit unit)</code>, 
+digunakan untuk menjadwalkan task dengan initial awal jeda dan periode waktu tertentu.</li>
+<li><code>public ScheduledFuture&lt;?&gt; scheduleWithFixedDelay(Runnable command, long initialDelay, long delay, TimeUnit unit)</code>, 
+Sama dengan yang sebelumnya, bedanya adalah delay sudah pasti dan tidak bisa ditawar.</li>
+</ol>
+<blockquote>
+<p>Ketika menggunakan <code>scheduleAtFixedRate</code> masih ada toleransi ketika processor menjalankan task yang lama, artinya
+thread akan menunggu sampai proses tersebut selesai. Sementara, <code>scheduleWithFixedDelay</code> kita harus bisa
+mempertimbangkan execution time setiap task.</p>
+</blockquote>
+<h4 id="interface-future-dan-callable"><code>interface Future</code> dan <code>Callable</code></h4>
+<p>Ketika kita membuat sebuah task menggunakan <code>interface Runnable</code>, task tersebut tidak dapat mengembalikan nilai
+kembalian ketika sudah selesai. Atau dengan kata lain ketika kita ingin memonitor task yang dijalankan, dapat 
+menggunakan <code>interface Callable</code>, <code>interface</code> tersebut terletak di <code>java.util.concurrent.Callable</code>.</p>
+<p><code>interface Future</code> digunakan untuk menampung nilai kembali dari <code>interface Callable</code>, nilai yang ditampung atau yang
+dapat dilewatkan pada <code>Callable</code> tidak hanya variabel biasa tetapi bisa sebuah objek.</p>
+<h4 id="library-guava"><code>Library Guava</code></h4>
+<p>Selain menggunakan interface atau class bawaan Java, sebenarnya <a href="https://github.com/google/guava" target="_blank">Google</a> juga 
+menyediakan <code>Library</code> untuk urusan concurrent. Ketika menggunakan maven dapat ditambahkan tag di bawah ini pada file
+<code>pom.xml</code>, untuk versi terbaru bisa juga mencari di 
+<a href="https://search.maven.org/classic/#search%7Cgav%7C1%7Cg%3A%22com.google.guava%22%20AND%20a%3A%22guava%22" target="_blank">Maven Central</a>.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.google.guava<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>guava<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>19.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h2 id="praktikum">Praktikum</h2>
+<h3 id="praktikum-1">Praktikum 1</h3>
+<ol>
+<li><p>Buatlah kode seperti di bawah ini untuk membuat sebuah Thread dengan <code>implements Runnable</code></p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+
+     <span class="hljs-keyword">private</span> String nama;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String nama)</span> </span>{
+         <span class="hljs-keyword">this</span>.nama = nama;
+     }
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+             System.out.println(<span class="hljs-string">&quot;&quot;</span> + nama + <span class="hljs-string">&quot; result: &quot;</span> + i);
+             Long delay = (<span class="hljs-keyword">long</span>) (Math.random() * <span class="hljs-number">10</span>);
+             <span class="hljs-keyword">try</span> {
+                 TimeUnit.SECONDS.sleep(delay);
+             } <span class="hljs-keyword">catch</span> (InterruptedException ex) {
+                 Logger.getLogger(Task.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         }
+     }
+
+ }
+</code></pre>
+</li>
+<li>Buatlah sebuah class, kemudian isikan methode <code>main()</code> menggunakan kode di bawah ini<pre><code class="lang-java"> ExecutorService executor = Executors.newSingleThreadExecutor();
+         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+             Task t = <span class="hljs-keyword">new</span> Task(<span class="hljs-string">&quot;Task &quot;</span> + i);
+             executor.execute(t);
+         }
+         executor.shutdown();
+</code></pre>
+</li>
+<li>Silakan jalankan kode yang telah Anda buat, amati dan pelajari hasilnya!</li>
+<li>Ubah kode <code>ExecutorService executor = Executors.newSingleThreadExecutor()</code> menjadi 
+<code>ExecutorService executor = Executors.newFixedThreadPool(5)</code></li>
+<li>Silakan jalankan kode yang telah Anda buat, bandingkan dengan yang sebelumnya apakah ada yang beda?</li>
+</ol>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Apakah perbedaan fungsi <code>Thread.sleep(int milisecond)</code> dengan <code>TimeUnit.SECONDS.sleep(long timeout)</code>?</li>
+<li>Ubah kode <code>ExecutorService executor = Executors.newFixedThreadPool(5)</code> menjadi 
+<code>ExecutorService executor = Executors.newCachedThreadPool()</code> apakah ada pengaruhnya dan jelaskan!</li>
+<li>Apakah perbedaan kode <code>ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(5)</code>
+dengan <code>ExecutorService executor = Executors.newFixedThreadPool(5)</code></li>
+</ol>
+<h4 id="praktikum-2">Praktikum 2</h4>
+<ol>
+<li><p>Buatlah class sebagai berikut</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tist</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Callable</span>&lt;<span class="hljs-title">String</span>&gt; </span>{
+
+     <span class="hljs-keyword">private</span> String name;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Tist</span><span class="hljs-params">(String name)</span> </span>{
+         <span class="hljs-keyword">this</span>.name = name;
+     }
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">call</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+         <span class="hljs-keyword">return</span> name + <span class="hljs-string">&quot; Message from Callable&quot;</span>;
+     }
+
+ }
+</code></pre>
+</li>
+<li>Buatlah sebuah kelas <code>Praktikum2</code></li>
+<li>Buatlah instance variabel <code>executor</code> dari <code>interface Executors</code> dengan jumlah thread fix 5</li>
+<li><p>Submit task dari object Task sebanyak 10 kali dan ambil nilai kembalinya.
+ Output yang diharapkan adalah sebagai berikut</p>
+  <figure style="text-align: center">
+     <img src="images/10-01.png" alt="Output praktikum 02">
+     <figcaption style="text-align: center">Output</figcaption>
+   </figure>    
+
+</li>
+</ol>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Silakan coba method <code>public V get(long timeout, TimeUnit unit)</code> untuk mendapatkan nilai kembalian dari objek
+<code>Callable</code>. Perbedaannya apa dengan <code>get()</code>, tanpa parameter?</li>
+<li>Ubah kode pada method <code>call()</code> kelas <code>Tist</code>, menjadi kode untuk menghitung nilai total dari 5 buah nilai, silakan
+menggunakan perulangan untuk menghitungnya. Setelah diubah, lewatkan objek <code>Tist</code> sebanyak 10 kali sehingga outputnya
+seperti di bawah ini <figure style="text-align: center">
+     <img src="images/10-02.png" alt="Output Pertanyaan">
+     <figcaption style="text-align: center">Output</figcaption>
+   </figure>
+
+</li>
+</ol>
+<h2 id="tugas">Tugas</h2>
+<p>Buatlah program dengan fungsi dan tampilan seperti di bawah ini</p>
+<figure style="text-align: center">
+    <img src="images/praktikum10-tugas.gif" alt="Tugas">
+    <figcaption style="text-align: center">Tugas</figcaption>
+</figure>
+
+<p>Kebutuhan program di atas adalah</p>
+<ol>
+<li>Dibuat menggunakan konsep thread pool</li>
+<li>Tampilan untuk clock menggunakan thread pool dengan jumlah thread 10 , bukan schedulling</li>
+<li>Tampilan untuk message generator menggunakan scheduling</li>
+</ol>
+<p><em><strong>Silakan kerjakan praktikum terlebih dahulu agar memahami konsep thread pool</strong></em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../09/jobsheet09.html" class="navigation navigation-prev " aria-label="Previous page: 10. Thread">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../11/jobsheet11.html" class="navigation navigation-next " aria-label="Next page: 12. Socket">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11. Thread Pool","level":"1.13","depth":1,"next":{"title":"12. Socket","level":"1.14","depth":1,"path":"11/jobsheet11.md","ref":"11/jobsheet11.md","articles":[]},"previous":{"title":"10. Thread","level":"1.12","depth":1,"path":"09/jobsheet09.md","ref":"09/jobsheet09.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"10/jobsheet10.md","mtime":"2019-12-10T04:56:20.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

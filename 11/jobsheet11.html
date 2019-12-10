@@ -1,0 +1,780 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12. Socket · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../12/jobsheet12.html" />
+    
+    
+    <link rel="prev" href="../10/jobsheet10.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="jobsheet11.html">
+            
+                <a href="jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >12. Socket</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="socket">Socket</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami penggunaan port</li>
+<li>Memahami dan menerapkan penggunaan socket untuk server dan client</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="port">Port</h4>
+<p>Nomor-nomor di bawah angka 1024 merupakan port yang umum digunakan dan ditetapkan oleh IANA (Internet Assigned Number 
+Authority). Tabel berikut ini menyebutkan beberapa port TCP yang telah umum digunakan.</p>
+   <figure style="text-align: center">
+                  <img src="images/11-01.png" alt="Konsep Thread Pool">
+                  <figcaption style="text-align: center">Contoh Well Known Port</figcaption>
+              </figure> 
+
+<h4 id="socket-untuk-client">Socket Untuk Client</h4>
+<p>Kelas <code>java.net.Socket</code> adalah kelas fundamental Java untuk melakukan operasi TCP client-side. Socket adalah sebuah 
+abstraksi perangkat lunak yang digunakan sebagai suatu &#x201C;terminal&#x201D; dari suatu hubungan antara dua mesin atau proses yang 
+saling berinterkoneksi. Di tiap mesin yang saling berinterkoneksi, harus terpasang socket.</p>
+<p>Pada J2SE telah disediakan paket java.net yang berisi kelas- kelas dan interface yang menyediakan API (Application 
+Programming Interface) level rendah (Socket, ServerSocket, DatagramSocket) dan level tinggi (URL, URLConnection).</p>
+<p>Socket akan membangun komunikasi antar proses yang sama-sama aktif.
+Ilustrasinya adalah sebagai berikut:</p>
+   <figure style="text-align: center">
+                  <img src="images/11-02.png" alt="Konsep Thread Pool">
+                  <figcaption style="text-align: center">Ilustrasi Penggunaan Socket</figcaption>
+              </figure>
+
+<p>Kelas <code>java.net.ServerSocket</code> digunakan oleh Server untuk listen koneksi, sedangkan <code>java.net.Socket</code> digunakan oleh Client 
+untuk inisialisasi koneksi. Setelah client terkoneksi ke server dengan menggunakan Socket, maka ServerSocket akan 
+mengembalikan status server ke client melalui koneksi yang terbentuk sebelumnya.</p>
+<p>Untuk pemrograman <code>_Socket Connection Oriented_</code> menggunakan kelas <code>java.net.ServerSocket</code> dan <code>java.net.Socket</code>. Untuk 
+pemrograman <code>_Socket Connectionless Oriented_</code> menggunakan kelas <code>java.net.DatagramSocket</code>.
+Format dari <code>java.net.socket</code> sebagai berikut:</p>
+<ul>
+<li><code>Socket(InetAddress address, int port);</code>
+  Untuk membuat sebuah stream socket dan koneksi ke suatu nomor port pada sebuah computer yang memiliki alamat 
+IP menggunakan perintah berikut:</li>
+<li><code>Socket(String host, int port);</code>
+Untuk membuat sebuah stream socket dan juga koneksi ke suatu port tertentu pada sebuah komputer berdasar namanya.</li>
+<li><code>Socket(InetAddress address, int port, InetAddresslocalAddr, int localPort);</code></li>
+<li><code>Socket(String host, int port, InetAddress localAddr, int localPort);</code></li>
+</ul>
+<p>Membuat sebuah socket dan mengkoneksikannya ke port yang dituju pada alamat IP yang disebutkan pada parameter address 
+atau nama host. Selain itu juga akan dilakukan bind socket ke alamat lokal dan port lokal. (Hal ini dilakukan jika 
+koneksi antara client dan server membutuhkan nomor port yang sudah ditentukan.</p>
+<ul>
+<li><code>getInetAddress();</code>
+  Untuk mendapatkan nama host yang dituju dan alamat Ipnya</li>
+<li><code>getPort();</code>
+  Untuk mendapatkan nomor remote host</li>
+<li><code>getLocalPort();</code>
+  Untuk mendapatkan nomor port localhost</li>
+<li><code>getLocalAddress();</code>
+  Untuk mendapatkan alamat local dimana socket digunakan
+<code>- getInputStream();</code>
+  Mengembalikan objek input stream dari socket
+<code>- getOutputStream();</code>
+  Mengembalikan objek output stream ke socket</li>
+<li><code>setSoTimeout(int timeout);</code></li>
+<li><code>getSoTimeOut();</code></li>
+</ul>
+<p>Kedua method tersebut digunakan untuk memberi (set) dan mengambil (get) nilai opsi Socket untuk time out block 
+(dalam milidetik) reading dari socket (SO_TIMEOUT). Jika dalam waktu timeout tidak mendapat suatu nilai maka, akan 
+dilemparkan ke exception <code>java.net.SocketTimeoutException</code>. Nilai default timeoutnya adalah 0, yang berarti tanpa batas.
+<code>setTCPNoDelay(boolean on);</code>
+<code>getTCPNoDelay();</code></p>
+<p>Kedua method ini digunakan untuk memberi dan mengambil nilai opsi Socket TCP_NODELAY, yaitu untuk mengaktifkan atau 
+menonaktifkan Algoritma Nagle (RFC 896), yaitu algoritma yang membuat TCP lebih efisien dalam konsumsi bandwidth dengan 
+cara memperlambat penulisan data dalam ukuran yang kecil sehingga data-data yang ada dapat terkirimkan dalam suatu paket 
+dengan ukuran besar. Nilai default opsi ini adalah aktif. Namun jika diinginkan adanya pengurangan network latency 
+(waktu delay dalam pengiriman paket) dan meningkatkan unjuk kerja, maka opsi ini harus di nonaktifkan (di set dengan 
+nilai false), namun akibatnya konsumsi bandwidth akan bertambah besar.</p>
+<ul>
+<li><code>setSoLinger(boolean on, int linger);</code></li>
+<li><code>getSoLinger();</code></li>
+</ul>
+<p>Method tersebut akan mengaktifkan (true) atau menonaktifkan (false) opsi SO_LINGER dengan nilai waktu linger dalam 
+milidetik. Opsi ini berpengaruh ketika socket ditutup, yaitu menentukan nilai waktu maksikum koneksi yang masih akan 
+dipertahankan sampai socket koneksi benar-bernar ditutup. Hal ini berguna untuk mengirim dan memberikan ACK 
+(acknowledge) terhadap data yang belum terkirim.</p>
+<ul>
+<li><code>setSendBufferSize(int size);</code></li>
+<li><code>getSendBufferSize();</code></li>
+</ul>
+<p>Method ini akan mengatur dan mengambil informasi tentang ukuran buffer SO_SNDBUF, yaitu buffer untuk mengiriman. 
+Ukuran ini juga harus disesuaikan ukuran buffer pada level network.</p>
+<ul>
+<li><code>setReceiveBufferSize(int size);</code></li>
+<li><code>getReceiveBufferSize();</code>
+Method ini digunakan jika Anda ingin mengatur ukuran buffer SO_RCVBUF, yaitu buffer yang digunakan untuk menampung paket 
+yang masuk. Ukuran buffer ini juga digunakan untuk mengatur ukuran window yang diterapkan oleh TCP untuk flow controlnya 
+(sliding window). Dalam pemanfaatan opsi ini, perlu dipastikan antara RCVBUF client dengan server ada sinkronisasi, 
+sehingga sebelum server membind port yang akan digunakan ke socket (TCP) ataupun sebelum client membuka koneksi ke 
+server, terlebih dahulu opsi ini harus di atur, jika Anda ingin mengaturnya.</li>
+</ul>
+<h4 id="socket-untuk-server">Socket untuk Server</h4>
+<p>Kelas ServerSocket berisi semua yang diperlukan untuk menulis server di Java. Ini memiliki konstruktor yang membuat 
+objek baru ServerSocket, metode yang mendengarkan koneksi pada port tertentu, metode yang mengkonfigurasi opsi server 
+berbagai soket, dan bermacam-macam metode biasa seperti <code>toString()</code>.
+Dalam pemrograman java siklus hidup dasar dari suatu program server adalah:</p>
+<ol>
+<li>Sebuah ServerSocket yang baru dibuat pada sebuah port tertentu menggunakan konstruktor <code>ServerSocket()</code>.</li>
+<li>ServerSocket mendengarkan upaya koneksi masuk pada port menggunakan metode <code>accept()</code>.</li>
+<li>Tergantung pada jenis server, baik <code>getInputStream()</code>, <code>getOutputStream()</code>, atau keduanya dipanggil untuk 
+mendapatkan input dan output stream yang berkomunikasi dengan klien.</li>
+<li>Server dan klien berinteraksi sesuai dengan yang telah disepakati protokol sampai</li>
+<li>Menutup koneksi.</li>
+<li>Server, klien, atau keduanya menutup koneksi.</li>
+<li>Server kembali ke langkah 2 dan menunggu sambungan berikutnya.</li>
+</ol>
+<h2 id="langkah-langkah-praktikum">Langkah-langkah Praktikum</h2>
+<h3 id="praktikum-1">Praktikum 1</h3>
+<p>Pada praktikum yang pertama adalah membuat program yang sederhana menggunakan socket, dimana sebuah client akan
+mengirimkan sebuah pesan ke server. Setelah client mendapatkan pesan, maka client dan server akan berhenti atau kedua
+aplikasi akan keluar. </p>
+<h4 id="socket-untuk-client">Socket untuk Client</h4>
+<p>Class <code>GreetClient</code> adalah contoh class yang digunakan oleh client untuk berkomunikasi dengan server, yaitu dengan
+mengirimkan pesan ke sever.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreetClient</span> </span>{
+
+    <span class="hljs-keyword">private</span> Socket clientSocket;
+    <span class="hljs-keyword">private</span> PrintWriter out;
+    <span class="hljs-keyword">private</span> BufferedReader in;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">startConnection</span><span class="hljs-params">(String ip, <span class="hljs-keyword">int</span> port)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            clientSocket = <span class="hljs-keyword">new</span> Socket(ip, port);
+            out = <span class="hljs-keyword">new</span> PrintWriter(clientSocket.getOutputStream(), <span class="hljs-keyword">true</span>);
+            in = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(clientSocket.getInputStream()));
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(GreetClient.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">sendMessage</span><span class="hljs-params">(String msg)</span> </span>{
+        String resp = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            out.println(msg);
+            resp = in.readLine();
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(GreetClient.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+        <span class="hljs-keyword">return</span> resp;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stopConnection</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            in.close();
+            out.close();
+            clientSocket.close();
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(GreetClient.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+}
+</code></pre>
+<h4 id="socket-untuk-server">Socket untuk Server</h4>
+<p>Class <code>EchoServer</code> adalah class untuk menerima atau membaca stream/data dari client, setelah server menerima pesan dari
+client maka server akan mengirimkan atau forward pesan tersebut ke client. Ketika client mengirimkan pesan &quot;.&quot;, maka
+server akan keluar.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EchoServer</span> </span>{
+
+    <span class="hljs-keyword">private</span> ServerSocket serverSocket;
+    <span class="hljs-keyword">private</span> Socket clientSocket;
+    <span class="hljs-keyword">private</span> PrintWriter out;
+    <span class="hljs-keyword">private</span> BufferedReader in;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">(<span class="hljs-keyword">int</span> port)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            serverSocket = <span class="hljs-keyword">new</span> ServerSocket(port);
+            clientSocket = serverSocket.accept();
+            out = <span class="hljs-keyword">new</span> PrintWriter(clientSocket.getOutputStream(), <span class="hljs-keyword">true</span>);
+            in = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(clientSocket.getInputStream()));
+
+            String inputLine;
+            <span class="hljs-keyword">while</span> ((inputLine = in.readLine()) != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;.&quot;</span>.equals(inputLine)) {
+                    out.println(<span class="hljs-string">&quot;good bye&quot;</span>);
+                    <span class="hljs-keyword">break</span>;
+                }
+                out.println(inputLine);
+            }
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(EchoServer.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            in.close();
+            out.close();
+            clientSocket.close();
+            serverSocket.close();
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(GreetServer.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        EchoServer server = <span class="hljs-keyword">new</span> EchoServer();
+        server.start(<span class="hljs-number">6666</span>);
+    }
+}
+</code></pre>
+<p>Selanjutnya untuk mencoba contoh kode di atas, buatlah class dan method main yang berisi potongan kode seperti di bawah 
+ini. Jangan lupa server juga harus terlebih dahulu dijalankan.</p>
+<pre><code class="lang-java">GreetClient client = <span class="hljs-keyword">new</span> GreetClient();
+client.startConnection(<span class="hljs-string">&quot;127.0.0.1&quot;</span>, <span class="hljs-number">6666</span>);
+String response = client.sendMessage(<span class="hljs-string">&quot;hello server&quot;</span>);
+System.out.println(<span class="hljs-string">&quot;&quot;</span> + response);
+</code></pre>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Setelah menjalankan potongan kode di atas, apakah yang dapat Anda simpulkan?</li>
+<li>Buatlah kode untuk melakukan scan range port pada komputer Anda?</li>
+</ol>
+<h3 id="praktikum-2">Praktikum 2</h3>
+<p>Pada praktikum yang kedua, akan dicontoh sebuah kode untuk server agar dapat menerima request dari banyak client. 
+Agar dapat menerima request dari banyak client, maka dibutuhkan sebuah <code>Thread</code>. Kodenya adalah di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EchoMultiServer</span> </span>{
+
+    <span class="hljs-keyword">private</span> ServerSocket serverSocket;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">(<span class="hljs-keyword">int</span> port)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            System.out.println(<span class="hljs-string">&quot;Starting server on port &quot;</span>+port);
+            serverSocket = <span class="hljs-keyword">new</span> ServerSocket(port);
+            <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+                <span class="hljs-keyword">new</span> EchoClientHandler(serverSocket.accept()).start();
+            }
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(EchoMultiServer.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            serverSocket.close();
+        } <span class="hljs-keyword">catch</span> (IOException ex) {
+            Logger.getLogger(EchoMultiServer.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+        }
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EchoClientHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+
+        <span class="hljs-keyword">private</span> Socket clientSocket;
+        <span class="hljs-keyword">private</span> PrintWriter out;
+        <span class="hljs-keyword">private</span> BufferedReader in;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EchoClientHandler</span><span class="hljs-params">(Socket socket)</span> </span>{
+            <span class="hljs-keyword">this</span>.clientSocket = socket;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">try</span> {
+                out = <span class="hljs-keyword">new</span> PrintWriter(clientSocket.getOutputStream(), <span class="hljs-keyword">true</span>);
+                in = <span class="hljs-keyword">new</span> BufferedReader(
+                        <span class="hljs-keyword">new</span> InputStreamReader(clientSocket.getInputStream()));
+
+                String inputLine;
+                <span class="hljs-keyword">while</span> ((inputLine = in.readLine()) != <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;.&quot;</span>.equals(inputLine)) {
+                        out.println(<span class="hljs-string">&quot;bye&quot;</span>);
+                        <span class="hljs-keyword">break</span>;
+                    }
+                    out.println(inputLine);
+                }
+
+                in.close();
+                out.close();
+                clientSocket.close();
+            } <span class="hljs-keyword">catch</span> (IOException ex) {
+                Logger.getLogger(EchoMultiServer.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        EchoMultiServer server = <span class="hljs-keyword">new</span> EchoMultiServer();
+        server.start(<span class="hljs-number">6666</span>);
+    }
+}
+</code></pre>
+<p>Untuk kode client, masih sama dengan yang sebelumnya. Untuk mencoba code server tersebut buatlah class yang didalamnya
+terdapat method main, potongan kodenya adalah di bawah ini</p>
+<pre><code class="lang-java">GreetClient client1 = <span class="hljs-keyword">new</span> GreetClient();
+client1.startConnection(<span class="hljs-string">&quot;127.0.0.1&quot;</span>, <span class="hljs-number">6666</span>);
+String response = client1.sendMessage(<span class="hljs-string">&quot;holla server&quot;</span>);
+String response1 = client1.sendMessage(<span class="hljs-string">&quot;hoe server&quot;</span>);
+String endMessage = client1.sendMessage(<span class="hljs-string">&quot;.&quot;</span>);
+System.out.println(<span class="hljs-string">&quot;&quot;</span> + response);
+System.out.println(<span class="hljs-string">&quot;&quot;</span> + response1);
+System.out.format(<span class="hljs-string">&quot;%s&quot;</span>, endMessage);
+</code></pre>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Setelah menjalankan potongan kode di atas, apakah yang dapat Anda simpulkan?</li>
+<li>Silakan modifikasi pada method main yang sebelumnya telah Anda buat, buatlah instance client lebih dari 1!</li>
+<li>Pada class di atas masih menggunakan <code>Thread</code> biasa, ganti menggunakan <code>Thread Pool</code>!</li>
+</ol>
+<h2 id="tugas">Tugas</h2>
+<!---
+_**Silakan kerjakan praktikum terlebih dahulu agar memahami konsep socket**_
+-->
+<p>Buatlah aplikasi chat client seperti tampilan di bawah ini</p>
+<p><figure style="text-align: center">
+                  <img src="images/praktikum12-tugas.gif" alt="Tugas Socket">
+                  <figcaption style="text-align: center">Tugas Socket</figcaption>
+              </figure>
+<strong>Silakan gunakan thread pool pada bagian servernya.</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../10/jobsheet10.html" class="navigation navigation-prev " aria-label="Previous page: 11. Thread Pool">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../12/jobsheet12.html" class="navigation navigation-next " aria-label="Next page: 13. Pemrograman User Datagram Protocol (UDP)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12. Socket","level":"1.14","depth":1,"next":{"title":"13. Pemrograman User Datagram Protocol (UDP)","level":"1.15","depth":1,"path":"12/jobsheet12.md","ref":"12/jobsheet12.md","articles":[]},"previous":{"title":"11. Thread Pool","level":"1.13","depth":1,"path":"10/jobsheet10.md","ref":"10/jobsheet10.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"11/jobsheet11.md","mtime":"2019-12-10T04:56:20.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

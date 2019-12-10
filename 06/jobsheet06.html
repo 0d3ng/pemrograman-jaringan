@@ -1,0 +1,576 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6. Push Back - Filter Stream · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../07/jobsheet07.html" />
+    
+    
+    <link rel="prev" href="../05/jobsheet05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="jobsheet06.html">
+            
+                <a href="jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6. Push Back - Filter Stream</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="class-pushbackinputstream-dan-class-pushbackreader">Class PushbackInputStream dan Class PushbackReader</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami fungsi dan mengetahui kelebihan dari filter stream dari class <code>PushbackInputStream</code> dan class <code>PushbackReader</code></li>
+<li>Menerapkannya dalam aplikasi</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h2 id="ulasan-teori">Ulasan Teori</h2>
+<h3 id="class-pushbackinputstream">Class <code>PushbackInputStream</code></h3>
+<p>Class <code>PushbackInputStream</code> digunakan untuk memparsing data dari sebuah stream dengan tujuan untuk mengecek data sebelum dilakukan parsing secara menyeluruh. Class <code>PushbackInputStream</code> adalah turunan dari class <code>InputStream</code> sehingga methode-methode seperti <code>read(), close()</code>, dan lainnya.</p>
+<p>Konstruktor pada class ini adalah</p>
+<ul>
+<li><code>PushbackInputStream(InputStream in)</code> terdapat parameter <code>Inpustream</code> atau stream yang akan dilakukan pembacaan.</li>
+<li><code>PushbackInputStream(InputStream in, int size)</code>, parameter yang dibutuhkan adalah <code>Inputstream</code> dan ukuran stream yang akan dilakukan pembacaan.</li>
+</ul>
+<p>Sementara untuk methode, selain method yang diwariskan adalah</p>
+<ul>
+<li><code>public void unread(int b)</code>, digunakan untuk push back ke dalam stream data bertipe int. Data yang di-push hanya 1 karakter.</li>
+<li><code>public void unread(byte[] b)</code>, berbeda dengan <code>unread(int b)</code>, method ini dapat melakukan push back stream dengan byte array. </li>
+<li><code>public void unread(byte[] b, int off, int len)</code>, ketika mengetahui ukuran stream yang akan dilakukan push back method ini dapat digunakan. Parameter yang harus dilewatkan adalah data dalam bentuk array, posisi awal stream yang akan dibaca dan panjang dari stream. </li>
+</ul>
+<p>Untuk dapat menggunakan <code>PushbackInputStream</code> langkah yang dapat dilakukan adalah</p>
+<ul>
+<li>Instansiasi class <code>PushbackInputStream</code></li>
+<li>Lakukan pembacaan menggunakan methode <code>read()</code>, gunakan perulangan karena pembacaan dilakukan per <code>byte</code></li>
+<li>Panggil methode <code>unread()</code> untuk mengembalikan data ke stream</li>
+<li>Jangan lupa untuk menutup stream dengan memanggil method <code>close()</code></li>
+</ul>
+<h3 id="class-pushbackreader">Class <code>PushbackReader</code></h3>
+<p>Secara prinsip class ini sama dengan <code>PushbackInputStream</code>, merupakan class untuk menghandle pembacaan sebuah stream. Perbedaannya adalah untuk class ini terdapat mekanisme penyimpanan dalam sebuah buffer, sehingga prosesnya akan lebih cepat. Selain itu, ketika memanggil method <code>read()</code> dan <code>unread()</code> method yang digunakan bukan <code>byte[]</code>, akan tetapi menggunakan <code>char[]</code>.</p>
+<p>Konstrukor yang dapat digunakan</p>
+<ul>
+<li><code>PushbackReader(Reader in)</code>, parameter yang harus diisi adalah stream yang akan dibaca</li>
+<li><code>PushbackReader(Reader in, int size)</code>, selain parameter stream yang akan dibaca ditambahkan ukuran dari buffer untuk melakukan pembacaan.</li>
+</ul>
+<p>Kemudian untuk method yang dapat digunakan</p>
+<ul>
+<li><code>void unread(char[] cbuf)</code>, melakukan push back sebuah array karakter dan mengcopy ke dalam sebuah buffer</li>
+<li><code>void unread(char[] cbuf, int off, int len)</code>, melakukan push back sebuah array karakter dan mengcopy ke dalam sebuah buffer dengan panjang dan posisi awal buffer</li>
+<li><code>void unread(int b)</code>, melakukan push back satu data bertipe integer</li>
+</ul>
+<p>Untuk dapat menggunakan <code>PushbackReader</code> langkah yang dapat dilakukan adalah</p>
+<ul>
+<li>Instansiasi class <code>PushbackReader</code></li>
+<li>Lakukan pembacaan menggunakan methode <code>read()</code>, gunakan perulangan karena pembacaan dilakukan per <code>char</code>. Jika tanpa perulangan, gunakan <code>read()</code> dengan parameter <code>byte[]</code></li>
+<li>Panggil methode <code>unread()</code> untuk mengembalikan data ke stream</li>
+<li>Jangan lupa untuk menutup stream dengan memanggil method <code>close()</code></li>
+</ul>
+<h2 id="praktikum-1">Praktikum 1</h2>
+<p>Pada praktikum 1 yaitu program yang dibuat agar dapat membaca stream yang diinputkan melalui keyboard, dengan memanfaatkan class <code>PushbackInputStream</code>.</p>
+<ol>
+<li>Buat class <code>ReadStreamPushBackInputStream</code></li>
+<li><p>Tambahkan kode di bawah ini pada <code>method main()</code> </p>
+<pre><code class="lang-java">         PushbackInputStream stream = <span class="hljs-keyword">new</span> PushbackInputStream(System.in);
+                 System.out.print(<span class="hljs-string">&quot;Masukan karakter apapun: &quot;</span>);
+                 <span class="hljs-keyword">try</span> {
+                     <span class="hljs-keyword">int</span> read = stream.read();
+                     <span class="hljs-keyword">int</span> read2 = stream.read();
+                     System.out.print(<span class="hljs-string">&quot;&quot;</span> + (<span class="hljs-keyword">char</span>) read);
+                     System.out.print(<span class="hljs-string">&quot;&quot;</span> + (<span class="hljs-keyword">char</span>) read2);
+                 } <span class="hljs-keyword">catch</span> (IOException ex) {
+                     Logger.getLogger(ReadFilePushBackInputStream.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                 }
+</code></pre>
+</li>
+<li>Silakan jalankan kode di atas, dan amati hasil</li>
+<li>Tambahkan sintaks <code>stream.unread(read);</code> di bawah <code>int read = stream.read();</code></li>
+<li>Jalankan kembali, apakah ada perbedaan outputnya dari sebelumnya? Jika ada, mengapa bisa demikian.</li>
+</ol>
+<h3 id="pertanyaan">Pertanyaan</h3>
+<ul>
+<li>Buat file <code>coba.txt</code> di dalam project yang Anda buat</li>
+<li>Baca file <code>coba.txt</code> menggunakan class <code>PushbackInputStream</code> tanpa menggunakan perulangan</li>
+<li>Silakan explore penggunaan method <code>unread()</code></li>
+</ul>
+<h2 id="praktikum-2">Praktikum 2</h2>
+<p>Pada praktikum 1 yaitu program yang dibuat agar dapat membaca input melalui keyboard, dengan memanfaatkan class <code>PushbackReader</code>.</p>
+<ol>
+<li>Buatlah sebuah class <code>ReadStreamPushBackReader</code></li>
+<li><p>Tulis kode di bawah ini pada method <code>main()</code></p>
+<pre><code class="lang-java">             String s = <span class="hljs-string">&quot;Polinema tetap jaya selalu di kancah nasional dan akan berlanjut ke internasional&quot;</span>;
+                     PushbackReader reader = <span class="hljs-keyword">new</span> PushbackReader(<span class="hljs-keyword">new</span> InputStreamReader(<span class="hljs-keyword">new</span> ByteArrayInputStream(s.getBytes())));
+                     <span class="hljs-keyword">char</span>[] words = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[s.length()];
+                     <span class="hljs-keyword">try</span> {
+                         reader.read(words);
+                         System.out.println(<span class="hljs-string">&quot;&quot;</span> + <span class="hljs-keyword">new</span> String(words));
+                         words = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[<span class="hljs-number">8</span>];
+                         reader.unread(words);
+                     } <span class="hljs-keyword">catch</span> (IOException ex) {
+                         Logger.getLogger(ReadStreamPushBackReader.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                     }
+</code></pre>
+</li>
+<li>Silakan dijalankan, kemudian amati hasilnya.</li>
+</ol>
+<h3 id="pertanyaan">Pertanyaan</h3>
+<ul>
+<li>Silakan tambahkan perintah untuk membaca semua stream setelah sintaks <code>reader.unread(words);</code></li>
+<li>Buatlah file <code>coba.txt</code>, kemudian baca file tersebut menggunakan class <code>PushbackReader</code></li>
+<li>Panggil method <code>unread()</code> untuk membaca kata tertentu dari file <code>coba.txt</code> </li>
+</ul>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Silakan modifikasi praktikum ke-2 sehingga bisa memiliki fungsi-fungsi berikut ini</li>
+<li>Silakan menggunakan form yang sebelumnya sehingga bisa browse file yang akan dibaca menggunakana class <code>PushbackInputStream</code> atau <code>PushbackReader</code></li>
+<li>Silakan tampilkan informasi jumlah baris, jumlah kata, dan jumlah karakter dari file telah dibaca!  </li>
+</ul>
+<p><strong>Selamat mengerjakan. :)</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../05/jobsheet05.html" class="navigation navigation-prev " aria-label="Previous page: 5. Line Number - Filter Stream">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../07/jobsheet07.html" class="navigation navigation-next " aria-label="Next page: 7. Mini Project">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. Push Back - Filter Stream","level":"1.8","depth":1,"next":{"title":"7. Mini Project","level":"1.9","depth":1,"path":"07/jobsheet07.md","ref":"07/jobsheet07.md","articles":[]},"previous":{"title":"5. Line Number - Filter Stream","level":"1.7","depth":1,"path":"05/jobsheet05.md","ref":"05/jobsheet05.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"06/jobsheet06.md","mtime":"2019-12-10T04:56:20.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

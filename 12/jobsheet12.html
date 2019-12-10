@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13. Pemrograman User Datagram Protocol (UDP) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../11/jobsheet11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="jobsheet12.html">
+            
+                <a href="jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >13. Pemrograman User Datagram Protocol (UDP)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pemrograman-user-datagram-protocol-udp">PEMROGRAMAN USER DATAGRAM PROTOCOL (UDP)</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami User Datagram Protocol (UDP)</li>
+<li>Menerapkan komunikasi UDP pada aplikasi</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="udp-socket">UDP Socket</h4>
+<p>User Datagram Protocol (UDP), adalah salah satu protokol lapisan transpor TCP/IP yang mendukung komunikasi yang tidak 
+andal (unreliable), tanpa koneksi (connectionless) antara host-host dalam jaringan yang menggunakan TCP/IP. UDP 
+memiliki karakteristik-karakteristik berikut:</p>
+<ol>
+<li><em>Connectionless</em> (tanpa koneksi): Pesan-pesan UDP akan dikirimkan tanpa harus dilakukan proses negosiasi koneksi antara
+dua host yang hendak berukar informasi.</li>
+<li><em>Unreliable</em> (tidak andal): Pesan-pesan UDP akan dikirimkan sebagai datagram tanpa adanya nomor urut atau pesan 
+acknowledgment. Protokol lapisan aplikasi yang berjalan di atas UDP harus melakukan pemulihan terhadap pesan-pesan yang 
+hilang selama transmisi. Umumnya, protokol lapisan aplikasi yang berjalan di atas UDP mengimplementasikan layanan 
+keandalan mereka masing-masing, atau mengirim pesan secara periodik atau dengan menggunakan waktu yang telah didefinisikan.</li>
+<li>UDP menyediakan mekanisme untuk mengirim pesan-pesan ke sebuah protokol lapisan aplikasi atau proses tertentu di 
+dalam sebuah host dalam jaringan yang menggunakan TCP/IP. Header UDP berisi field Source Process Identification dan 
+Destination Process Identification.</li>
+<li>UDP menyediakan penghitungan checksum berukuran 16-bit terhadap keseluruhan pesan UDP.</li>
+</ol>
+<p>Aplikasi-aplikasi yang menggunakan protokol UDP antara lain adalah:</p>
+<ul>
+<li>DNS</li>
+<li>Video Streaming</li>
+<li>Voice over IP (VoIP)
+Soket UDP bisa menerima data dari lebih dari satu mesin atau host.</li>
+</ul>
+<h4 id="udp-dalam-java">UDP dalam Java</h4>
+<p>Java mendukung pemrograman komunikasi protokol UDP dengan menyediakan 2 kelas: </p>
+<ul>
+<li><code>java.net.DatagramSocket</code> </li>
+<li><code>java.net.DatagramPacket</code> </li>
+</ul>
+<h5 id="datagramsocket">DatagramSocket</h5>
+<p>Kelas DatagramPacket mewakili paket data yang ingin ditransmisikan menggunakan protokol UDP. Kelas ini terdiri dari 
+array bertipe <code>byte</code> yang menjadi tempat data yang ingin dikirim, atau tempat data yang akan diterima. Kelas ini juga 
+memiliki alamat IP dan alamat port.</p>
+<figure style="text-align: center">
+                  <img src="images/12-01.png" alt="Tugas Socket">
+                  <figcaption style="text-align: center">Datagram Packet</figcaption>
+              </figure>
+
+<p>Fungsi dari objek DatagramPacket adalah :</p>
+<ol>
+<li>Untuk mengirim data ke komputer lain menggunakan UDP</li>
+<li>Untuk menerima data dari komputer lain menggunakan UDP</li>
+</ol>
+<p>Konstruktor yang bisa kita gunakan bergantung dari alasan untuk apa objek DatagramPacket tersebut kita buat tadi. Untuk 
+mengirim datagram, maka konstruktornya adalah :</p>
+<ol>
+<li><code>public DatagramPacket(byte[] data, int length, InetAddress remote, int port)</code></li>
+<li><code>public DatagramPacket(byte[] data, int offset, int length, InetAddress remote, int port)</code>
+Contoh :<pre><code class="lang-java">InetAddress addr = InetAddress.getByName(<span class="hljs-string">&quot;192.168.0.1&quot;</span>); 
+DatagramPacket packet = <span class="hljs-keyword">new</span> DatagramPacket ( <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">128</span>], <span class="hljs-number">128</span>, addr, <span class="hljs-number">2000</span>);
+</code></pre>
+Sedangkan konstruktor untuk menerima datagram adalah :</li>
+<li><code>public DatagramPacket(byte[] buffer, int length)</code></li>
+<li><code>public DatagramPacket(byte[] buffer, int offset, int length)</code>
+Contoh :<pre><code class="lang-java">DatagramPacket packet = <span class="hljs-keyword">new</span> DatagramPacket(<span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">256</span>], <span class="hljs-number">256</span>);
+</code></pre>
+</li>
+</ol>
+<p>Sedangkan method-method yang dimiliki class DatagramPacket antara lain :</p>
+<ul>
+<li><code>InetAddress getAddress()</code> &#x2014; mengembalikan alamat IP asal datagram, atau IP tujuan datagam </li>
+<li><code>byte[] getData()</code> &#x2014; mengembalikan isi dari DatagramPacket, yaitu array byte. </li>
+<li><code>int getLength()</code> &#x2014; mengembalikan nilai panjangnya isi data yang ada pada DatagramPacket.</li>
+<li><code>int getPort()</code> &#x2014; mengembalikan nomor port asal datagram, atau port tujuan datagam, tergantung jenis datagramnya</li>
+<li><code>void setAddress(InetAddress addr)</code> &#x2014; mengeset alamat baru untuk DatagamPacket</li>
+<li><code>void setData(byte[] buffer)</code> &#x2014; memberikan buffer data baru dalam bentuk array byte</li>
+<li><code>void setLength(int length)</code> &#x2014; mengeset panjang dari DatagramPacket dengan nilai yang dimasukkan. Perlu diingat bahwa 
+panjangnya harus lebih kecil dari ukuran maksimum data buffer atau IllegalArgumentException akan terjadi.</li>
+<li><code>void setPort(int port)</code> &#x2014; memberikan nilai port tujuan baru bagi DatagramPacket.</li>
+</ul>
+<h5 id="datagrampaket">DatagramPaket</h5>
+<p>Kelas ini digunakan untuk mengirim dan menerima DatagramPacket dari atau ke jaringan. 
+Konstuktor :</p>
+<ul>
+<li><p><code>DatagramSocket(int port)</code> 
+digunakan untuk menyatakan penggunaan suatu nomor port sebagai &quot;pintu&quot; untuk menerima koneksi dari client. &#xF0E0; untuk 
+membuat server datagram socket</p>
+</li>
+<li><p><code>DatagramSocket(int port, InetAddress laddr)</code><br>membentuk koneksi dengan protokol UDP pada alamat IP lokal tertentu dan pada nomor port tertentu.</p>
+</li>
+<li><p><code>DatagramSocket()</code> 
+Kelas ini membentuk koneksi dengan protokol UDP pada alamat IP lokal host dengan penentuan nomor portnya secara random 
+berdasar tersedianya nomor port yang dapat digunakan. &#xF0E0; untuk membuat client datagram socket</p>
+</li>
+</ul>
+<p>Method-method :</p>
+<ul>
+<li><code>void close()</code> &#x2014; menutup socket dan melepaskannya dari port lokal. </li>
+<li><code>void connect(InetAddress remote_addr int remote_port)</code> &#x2014; membatasi akses menuju alamat tujuan dan port komputer tujuan</li>
+<li><code>void disconnect()</code> &#x2014; memutuskan DatagramSocket. </li>
+<li><code>InetAddress getInetAddress()</code> &#x2014; mengembalikan alamat komputer tujuan dimana socket terhubung, atau null apabila tidak
+ada koneksi ke tujuan. </li>
+<li><code>int getPort()</code> &#x2014; mengembalikan alamat port komputer tujuan jika socket terhubung, atau -1 apabila tidak ada koneksi </li>
+<li><code>InetAddress getLocalAddress()</code> &#x2014; mengembalikan alamat lokal dimana soket terkoneksi </li>
+<li><code>int getLocalPort()</code> &#x2014; mengembalikan nilai alamat port di mana soket terkoneksi </li>
+<li><code>int getReceiveBufferSize() throws java.net.SocketException</code> &#x2014; mengembalikan nilai ukuran maksimum buffer untuk paket 
+UDP yang akan diterima </li>
+<li><code>int getSendBufferSize() throws java.net.SocketException</code> &#x2014; mengembalikan nilai ukuran maksimum buffer untuk paket UDP
+yang akan dikirim </li>
+<li><code>int getSoTimeout() throws java.net.SocketException</code> &#x2014; mengembalikan nilai optional timeout soket. Nilai ini digunakan
+untuk menentukan berapa milidetik suatu operasi pembacaan akan memblok sebelum mengeluarkan pesan error 
+<code>java.io.InterruptedIOException.</code> Secara default, nilai ini akan berisi 0, menandakan bahwa I/O yang terblok akan dapat digunakan.. </li>
+<li><code>void receive(DatagramPacket packet) throws java.io.IOException</code> &#x2014; membaca paket UDP dan menyimpan isi paket tersebut. 
+Atribut alamat dan port dari paket akan ditulis ulang dengan alamat pengirim dan port pengirim, dan atribut panjang 
+paket akan berisi panjang paket asli yang mana bisa lebih kecil dari ukuran array byte paket. Jika nilai atribut timeout 
+tidak ditentukan menggunakan metode DatagramSocket.setSoTimeout(int duration), method ini akan memblok seterusnya. Jika 
+sudah ditentukan, maka error java.io.InterruptedIOException akan dikeluarkan apabila waktu melebihi waktu timeout yang sudah ditentukan. </li>
+<li><code>void send(DatagramPacket packet) throws java.io.IOException</code> &#x2014; mengirim paket UDP, yang dimasukkan sebagai parameter. </li>
+<li><code>void setReceiveBufferSize(int length) throws java.net. SocketException</code> &#x2014; mengeset ukuran maksimum buffer yang 
+digunakan untuk UDP packet yang diterima. </li>
+<li><code>void setSendBufferSize(int length) throws java.net.SocketException</code> &#x2014; mengeset ukuran maksimum buffer yang digunakan 
+untuk UDP packet yang dikirim. </li>
+<li><code>void setSoTimeout(int duration) throws java.net.SocketException</code> &#x2014; mengeset nilai option timeout soket. Berupa jumlah 
+milidetik yang diperbolehkan untuk melakukan blok pada operasi pembacaan sebelum dinyatakan error <code>java.io.InterruptedIOException</code>.</li>
+</ul>
+<h4 id="mengirim-data-udp">Mengirim Data UDP</h4>
+<p>Langkah-langkah untuk mengirim datagram UDP ke sebuah server UDP :</p>
+<ol>
+<li>Buatlah class dengan nama <code>JavaSenderUDP</code>.</li>
+<li>Mengkonversi data yang mau dikirim ke dalam bentuk <code>array byte</code></li>
+<li>Memasukkan <code>array byte</code> tadi, panjang data dalam array, dan <code>InetAddress</code> serta nomor port tujuan ke dalam 
+DatagramPacket lewat konstruktornya</li>
+<li>Buat <code>DatagramSocket</code> menggunakan konstruktornya (client <code>DatagramSocket</code>) , dan memanggil method <code>send()</code> dengan 
+memasukkan <code>DatagramPacket</code> yang telah dibuat.</li>
+<li>Contoh script sebagai berikut:<pre><code class="lang-java"> InetAddress ia = InetAddress.getByName(&#x201C;localhost&#x201D;);
+ <span class="hljs-keyword">int</span> Port = <span class="hljs-number">2000</span>;
+ String s = &#x201C;Pesan ini dari UDP&#x201C;;
+ <span class="hljs-keyword">byte</span>[] b = s.getBytes();
+ DatagramPacket dp = <span class="hljs-keyword">new</span> DatagramPacket(b, b.length, ia, Port);
+ DatagramSocket sender = <span class="hljs-keyword">new</span> DatagramSocket();
+ sender.send(dp);
+</code></pre>
+</li>
+<li>Jalankan program tersebut!</li>
+</ol>
+<h4 id="menerima-data-udp">Menerima Data UDP</h4>
+<p>Langkah untuk menerima datagram UDP dari klien adalah :</p>
+<ol>
+<li>Buatlah sebuah class dengan nama <code>JavaRecieveUDP</code>.</li>
+<li>Buatlah sebuah DatagramPacket kosong (<code>DatagramPacket</code> untuk menerima data)</li>
+<li>Buatlah objek <code>DatagramSocket</code> melalui konstruktornya (<code>DatagramSocket</code> untuk server)</li>
+<li>Lalu panggil method <code>receive()</code> dari datagramSocket dengan memasukkan <code>DatagramPacket</code> kosong yang telah dibuat tadi 
+untuk menampung datagram yang datang.</li>
+<li>Ambil datanya dalam bentuk <code>array byte</code> pada DatagramPacket yang telah terisi. Lalu konversikan ke bentuk data yang 
+diinginkan.</li>
+<li>Contoh  :<pre><code class="lang-java"><span class="hljs-keyword">try</span> {
+<span class="hljs-keyword">byte</span> buffer = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">65536</span>]; 
+DatagramPacket incoming = <span class="hljs-keyword">new</span> DatagramPacket(buffer,buffer.length);
+DatagramSocket ds = <span class="hljs-keyword">new</span> DatagramSocket(<span class="hljs-number">2134</span>);
+ds.receive(incoming);
+<span class="hljs-keyword">byte</span>[] data = incoming.getData();
+String s = <span class="hljs-keyword">new</span> String(data, <span class="hljs-number">0</span>, data.getLength());
+System.out.println(<span class="hljs-string">&quot;Port &quot;</span> + incoming.getPort() + <span class="hljs-string">&quot; on &quot;</span> + incoming.getAddress() + <span class="hljs-string">&quot; sent this message:&quot;</span>);
+System.out.println(s);
+}<span class="hljs-keyword">catch</span> (IOException e) {
+System.err.println(e);
+}
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>Class yang handle tentang pengiriman data pada protocol UDP terdapat pada class <code>DatagramPacket</code>, pada class tersebut 
+data yang akan dikirimkan harus berupa <code>byte array</code>. Sementara kebutuhan kita berbagai tipe data yang harus dikirimkan
+misalkan object dalam bentuk file, image, atau clas bentukan.</p>
+<p>Hal yang perlu dilakukan adalah mengubah object yang akan dikirimkan ke dalam bentuk byte array, sedangkan ketika
+menerima dalam bentuk <code>byte array</code>, harus diubah ke dalam bentuk object. Yang terakhir dilakukan adalah mengubah object
+ke dalam class bentukan dengan casting.</p>
+</blockquote>
+<h5 id="pertanyaan">Pertanyaan</h5>
+<ol>
+<li><p>Apakah output dari hasil potongan program di atas ketika dijalankan? Bandingkan dengan hasil di bawah ini</p>
+ <figure style="text-align: center">
+                   <img src="images/12-02.png" alt="Tugas Socket">
+                   <figcaption style="text-align: center">Output program</figcaption>
+               </figure>
+</li>
+<li><p>Mengapa bisa demikian, silakan hilangkan karakter aneh tersebut, sehingga ketika tampil hanya data yang dikirimkan oleh 
+server.</p>
+</li>
+<li>Silakan ubah baris perintah <code>byte buffer = new byte[65536]</code> sehingga ukuran arraynya lebih kecil, jalankan program 
+Anda dan sebenarnya fungsi perintah tersebut.</li>
+</ol>
+<h4 id="program-server">Program Server</h4>
+<ol>
+<li>Buatlah Project dengan nama Class <code>ServerDatagram.java.</code></li>
+<li>Tulislah perintah berikut<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.net.*;
+<span class="hljs-keyword">import</span> java.io.*;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServerDatagram</span>
+</span>{
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> DatagramSocket ds;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> clientport=<span class="hljs-number">800</span>,serverport=<span class="hljs-number">900</span>;
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span> <span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> Exception
+</span>{
+  <span class="hljs-keyword">byte</span> buffer[]= <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">1024</span>];
+  ds= <span class="hljs-keyword">new</span> DatagramSocket (serverport);
+  BufferedReader dis= <span class="hljs-keyword">new</span> BufferedReader ( <span class="hljs-keyword">new</span> InputStreamReader (System.in));
+  System.out.println (<span class="hljs-string">&quot;Server menunggu input&quot;</span>);
+  InetAddress i=InetAddress.getByName (<span class="hljs-string">&quot;Localhost&quot;</span>);
+  <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>)
+  {
+      System.out.print(<span class="hljs-string">&quot;Inputan Server: &quot;</span>);
+      String str=dis.readLine();
+      <span class="hljs-keyword">if</span> ((str==<span class="hljs-keyword">null</span> || str.equals (<span class="hljs-string">&quot;end&quot;</span>)) )
+      <span class="hljs-keyword">break</span>;
+      buffer=str.getBytes();
+      ds.send ( <span class="hljs-keyword">new</span> DatagramPacket (buffer,str.length(), i, clientport));
+  }
+}
+}
+</code></pre>
+</li>
+<li>Jalankan program tersebut!</li>
+</ol>
+<h4 id="program-client">Program Client</h4>
+<ol>
+<li>Buatlah Project dengan nama Class <code>ClientDatagram</code>.</li>
+<li>Tuliskan perintah berikut:<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClientDatagram</span>
+</span>{
+ <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> DatagramSocket d;
+ <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">byte</span> buffer[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span> [<span class="hljs-number">1024</span>];
+ <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> clientport=<span class="hljs-number">800</span>,serverport =<span class="hljs-number">900</span>;
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span> <span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> Exception
+ </span>{
+     d= <span class="hljs-keyword">new</span> DatagramSocket (clientport);
+     System.out.println (<span class="hljs-string">&quot;Client sedang menunggu server mengirimkan data &quot;</span>);
+     System.out.println (<span class="hljs-string">&quot;tekan Ctrl + C untuk mengakhiri &quot;</span>);
+     <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>)
+     {
+         DatagramPacket p = <span class="hljs-keyword">new</span> DatagramPacket (buffer, buffer.length);
+         d.receive (p);
+         String ps= <span class="hljs-keyword">new</span> String (p.getData(),<span class="hljs-number">0</span>,p.getLength());
+         System.out.println(<span class="hljs-string">&quot;From Server: &quot;</span>+ ps);
+     }
+ }
+}
+</code></pre>
+</li>
+<li>Jalankan program tersebut!</li>
+</ol>
+<h2 id="tugas">Tugas</h2>
+<ol>
+<li>Modifikasi program di atas sehingga tidak hanya mengirimkan data text, tetapi juga bisa mengirimkan sebuah file.</li>
+<li>Modifikasilah program diatas agar menjadi program yang dapat digunakan untuk saling mengirim pesan menggunakan 2 komputer.</li>
+<li>Buatlah Program untuk meremote <code>Cursor Mouse</code> komputer lain menggunakan UDP!</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../11/jobsheet11.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 12. Socket">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13. Pemrograman User Datagram Protocol (UDP)","level":"1.15","depth":1,"next":{"title":"14. Kuis","level":"1.16","depth":1,"ref":"","articles":[]},"previous":{"title":"12. Socket","level":"1.14","depth":1,"path":"11/jobsheet11.md","ref":"11/jobsheet11.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"12/jobsheet12.md","mtime":"2019-12-10T04:56:20.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

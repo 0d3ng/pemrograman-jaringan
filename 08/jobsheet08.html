@@ -1,0 +1,748 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9. Object Persistence dan Object Serialization · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../09/jobsheet09.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04/jobsheet04.html">
+            
+                <a href="../04/jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="jobsheet08.html">
+            
+                <a href="jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9. Object Persistence dan Object Serialization</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="object-persistence-dan-object-serialization">Object Persistence dan Object Serialization</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami konsep <code>object persistence</code></li>
+<li>Menerapkan <code>object persistence</code> dengan menggunakan <code>object serialization</code> pada aplikasi</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h3 id="ulasan-teori">Ulasan Teori</h3>
+<h4 id="object-persistence">Object Persistence</h4>
+<p>Object persistence adalah kemampuan sebuah object untuk tetap hidup dalam sebuah sistem, tidak terpengaruh waktu dan ruang (space), bahkan apabila aplikasi pembuat object tersebut telah dihentikan atau komputer dimatikan. Untuk itu objek yang diinginkan supaya persistence harus disimpan secara utuh. 
+Penyimpanan objek secara utuh melibatkan penyimpanan struktur data yang dimiliki oleh objek tersebut, nilai-nilai atribut yang dimilikinya, dan pemetaan terhadap referensi ke objek lain apabila ada, sekaligus objek yang direferensikannya. Proses itu merupakan sebuah proses yang kompleks dan rumit. Di bawah ini adalah salah satu mekanisme object persistence dalam sebuah stream. </p>
+<figure style="text-align: center">
+                     <img src="images/serialize-deserialize-java.png" alt="serialize-deserialize-java">
+                     <figcaption style="text-align: center; font-weight: bold">Sumber https://www.geeksforgeeks.org/serialization-in-java/</figcaption>
+                 </figure>
+
+<h4 id="object-serialization">Object Serialization</h4>
+<p>Object Serialization adalah teknik yang bisa mewujudkan object persistence. Teknik ini mengontrol bagaimana data yang berisi informasi-informasi nilai dan status sebuah objek (termasuk nilai atribut-atributnya, hak akses tiap atributnya baik itu public, protected atau private, dan lain sebagainya) dituliskan dan disimpan dalam bentuk rangkaian byte-byte data.
+Objek yang diserialisasi nantinya dapat dikirimkan lewat jaringan, atau disimpan dalam file, untuk kemudian dapat diakses di lain waktu sesuai kebutuhan. Hal tersebut memungkinkan pindahnya suatu objek dari satu JVM ke JVM lain, entah dalam satu mesin atau mesin yang berbeda.</p>
+<h4 id="cara-kerja-object-serialization">Cara Kerja Object Serialization</h4>
+<p>Setiap objek yang mengimplementasikan interface <code>java.io.Serializable</code> dapat diserialisasikan hanya dengan beberapa baris kode. Mengimplementasikannya sama dengan cara menerapkan interface-interface yang lain pada JAVA, yaitu dengan menambahkan keyword implement pada deklarasi class yang diinginkan dan menggunakan konstruktor tanpa argumen tambahan. Interface ini menunjukkan bahwa class yang kita buat dapat mendukung serialisasi objek. Tidak ada method tambahan yang perlu diimplementasikan pada class tersebut.
+Contoh deklarasi class yang menerapkan interface tersebut :</p>
+<pre><code class="lang-java">    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SomeOtherClass</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span> </span>{
+            <span class="hljs-function"><span class="hljs-keyword">public</span> class <span class="hljs-title">SomeClass</span><span class="hljs-params">()</span>
+            }
+            }
+            ...
+    }
+</span></code></pre>
+<h4 id="permasalahan-pada-penggunaan-serialisasi">Permasalahan pada Penggunaan Serialisasi</h4>
+<p>Terdapat beberapa masalah pada awal munculnya metode serialisasi. Contohnya apabila objek yang ingin kita serialisasi memiliki informasi rahasia / sensitif yang tidak patut kita ikutkan dalam serialisasi untuk disimpan dalam bentuk file ke media penyimpanan atau dikirimkan ke jaringan. 
+Apabila ada kasus seperti ini : kelas yang ingin kita serialisasi memiliki atribut password dimana bisa secara mudah dibaca apabila diserialisasikan. Untuk mencegah hal-hal tersebut, maka diciptakanlah keyword trancient. Keyword tersebut bisa diberikan pada deklarasi anggota / atribut dari kelas yang tidak kita inginkan untuk diikutkan pada proses serialisasi.
+Contoh penggunaan trancient pada deklarasi kelas :</p>
+<pre><code class="lang-java">Public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserAccount</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span> </span>{
+        <span class="hljs-keyword">protected</span> String username;
+        <span class="hljs-keyword">protected</span> <span class="hljs-keyword">transient</span> String password;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">UserAccount</span><span class="hljs-params">( )</span>
+        </span>{
+            &#x2026;.
+        }
+}
+</code></pre>
+<blockquote>
+<p>Attribut yang menggunakan modifier <code>transient</code> ketika proses serializable akan di-exclude, tidak ikut diserialisasi sehingga nilai dari attribut tersebut adalah null atau 0.
+Selain menggunakan modifier <code>transient</code>, modifier <code>static</code> pada attribut juga dikenai serialisasi atau ketika sebuah object telah dilakukan write dapat diubah kembali attribut tersebut.</p>
+<h4 id="object-deserialization">Object Deserialization</h4>
+<p>Deserialization merupakan kebalikan dari serialization, yaitu mengubah byte stream ke dalam sebuah object ke dalam memori.</p>
+<p>Untuk melakukan serialization dan deserialization membutuhkan <code>SerialVersionUID</code> dalam setiap class yang akan dilakukan proses tersebut, fungsi <code>SerialVersionUID</code> adalah untuk memastikan bahwa object yang deserialization benar dan valid.
+Ketika objectnya tidak sesuai maka akan mengakibatkan <code>InvalidClassException</code>.</p>
+<p><code>SerialVersionUID</code> sebaiknya secara implisit dibuat, walaupun secara explisit dibuatkan oleh runtime tetapi proses tersebut membutuhkan kalkulasi sehingga resource akan meningkat/bertambah.</p>
+<p>Contoh:</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID=<span class="hljs-number">42L</span>
+</code></pre>
+<h4 id="membaca-dan-menuliskan-object-pada-stream">Membaca dan Menuliskan Object pada Stream</h4>
+<p>Point utama dari serialisasi adalah bagaimana kita menuliskan objek ke stream dan bagaimana cara mendapatkannya kembali untuk bisa digunakan. Hal tersebut bisa dilakukan dengan menggunakan kelas <code>java.io.ObjectOutputStream</code> dan <code>java.io.ObjectInputStream</code></p>
+<h4 id="kelas-objectinputstream">Kelas ObjectInputStream</h4>
+<p>Digunakan untuk mengambil objek yang terserialisasi dari byte stream untuk dapat direkonstruksi ulang menjadi bentuk asli objek tersebut. 
+Kelas <code>ObjectInputStream</code> mengimplementasikan interface <code>ObjectInput</code> yang merupakan turunan dari interface <code>DataInput</code>. Artinya kelas ini menyediakan banyak method untuk beroperasi dengan banyak tipe data seperti halnya pada kelas <code>DataInputStream</code>.</p>
+<ul>
+<li>Konstruktor<ul>
+<li><code>protected ObjectInputStream()</code> &#x2013; merupakan konstruktor default untuk turunan dari ObjectInputStream</li>
+<li><code>ObjectInputStream(InputStream input)</code> &#x2013; membuat object input stream yang terkoneksi dengan input stream yang ditunjuk, dapat digunakan untuk mengembalikan objek yang terserialisasi</li>
+</ul>
+</li>
+<li>Method - method<ul>
+<li><code>public final Object readObject()</code> &#x2013; membaca objek yang terserialisasi dari stream dan merekonstruksinya kembali</li>
+</ul>
+</li>
+</ul>
+<h4 id="kelas-objectoutputstream">Kelas ObjectOutputStream</h4>
+<p>Kelas ini digunakan untuk menserialisasi objek dan dikirimkan melalui byte stream dalam rangka object persistence. Bisa dihubungkan ke semua output stream seperti file output dan networking stream.</p>
+<ul>
+<li>Konstuktor<ul>
+<li><code>protected ObjectOutputStream()</code> &#x2013; konstruktor default</li>
+<li><code>ObjectOutputStream(OutputStream output)</code> &#x2013; membuat objek output stream yang mampu menserialisasi objek dan dikirim melalui stream output yang ditunjuk</li>
+</ul>
+</li>
+<li>Method-method<ul>
+<li><code>void writeObject (Object object)</code> &#x2013; menuliskan objek yang dimaksud ke output stream melalui proses serialisasi.</li>
+</ul>
+</li>
+</ul>
+<h3 id="praktikum">Praktikum</h3>
+<h4 id="praktikum-1">Praktikum 1</h4>
+<p>Contoh penggunaan object serialization dapat dilihat pada kode aplikasi di awah ini, di mana aplikasi membuat objek yang dapat disimpan dan dipanggil kembali lengkap dengan informasi dan status terakhir (nilai-nilai atribut yang dimiliki) objek tersebut.</p>
+<ol>
+<li><p>Buat class <code>Mahasiswa</code> seperti ditunjukkan pada kode di bawah ini</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Mahasiswa</span> </span>{
+
+     <span class="hljs-keyword">private</span> String nim;
+     <span class="hljs-keyword">private</span> String nama;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Mahasiswa</span><span class="hljs-params">(String nim, String nama)</span> </span>{
+         <span class="hljs-keyword">this</span>.nim = nim;
+         <span class="hljs-keyword">this</span>.nama = nama;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getNim</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> nim;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNim</span><span class="hljs-params">(String nim)</span> </span>{
+         <span class="hljs-keyword">this</span>.nim = nim;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getNama</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> nama;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNama</span><span class="hljs-params">(String nama)</span> </span>{
+         <span class="hljs-keyword">this</span>.nama = nama;
+     }
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Mahasiswa{&quot;</span> + <span class="hljs-string">&quot;nim=&quot;</span> + nim + <span class="hljs-string">&quot;, nama=&quot;</span> + nama + <span class="hljs-string">&apos;}&apos;</span>;
+     }
+
+ }
+</code></pre>
+<p>Class di atas digunakan untuk membuat sebuah object, yang nantinya akan disimpan ke dalam sebuah stream dan dilakukan pembacaan kembali object tersebut.</p>
+</li>
+<li><p>Buatlah class <code>Praktikum1</code> dengan kode di bawah ini</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Praktikum1</span> </span>{
+
+     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeObject</span><span class="hljs-params">(Object o)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+         <span class="hljs-keyword">try</span> {
+             ObjectOutputStream oos = <span class="hljs-keyword">new</span> ObjectOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;mhs.obj&quot;</span>));
+             oos.writeObject(o);
+             oos.flush();
+             oos.close();
+         } <span class="hljs-keyword">catch</span> (FileNotFoundException ex) {
+             <span class="hljs-keyword">throw</span> ex;
+         } <span class="hljs-keyword">catch</span> (IOException ex) {
+             <span class="hljs-keyword">throw</span> ex;
+         }
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Object <span class="hljs-title">readObject</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+         ObjectInputStream ois = <span class="hljs-keyword">new</span> ObjectInputStream(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;mhs.obj&quot;</span>));
+         <span class="hljs-keyword">try</span> {
+             Object readObject = ois.readObject();
+             ois.close();
+             <span class="hljs-keyword">return</span> readObject;
+         } <span class="hljs-keyword">catch</span> (ClassNotFoundException ex) {
+             <span class="hljs-keyword">throw</span> ex;
+         }
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+         Mahasiswa m = <span class="hljs-keyword">new</span> Mahasiswa(<span class="hljs-string">&quot;075410099&quot;</span>, <span class="hljs-string">&quot;AL Ayubbi&quot;</span>);
+         <span class="hljs-keyword">try</span> {
+             writeObject(m);
+             Mahasiswa readObject = (Mahasiswa) readObject();
+             System.out.println(<span class="hljs-string">&quot;&quot;</span> + readObject);
+         } <span class="hljs-keyword">catch</span> (Exception ex) {
+             Logger.getLogger(Praktikum1.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+         }
+     }
+
+ }
+</code></pre>
+<p>Untuk membuat method <code>Getter, Setter, ToString()</code> silakan memanfaatkan generate editor dengan <code>Klik Kanan - Insert Code...</code> kemudian pilih method yang akan di-genereate, misalkan <code>Getter dan Setter</code> yang dicontohkan pada gambar di bawah ini</p>
+<figure style="text-align: center">
+            <img src="images/08-01.png" alt="Generate Getter dan Setter">
+            <figcaption style="text-align: center; font-weight: bold">Generate Getter dan Setter</figcaption>
+        </figure></li>
+<li>Silakan jalankan program di atas, apa yang terjadi?</li>
+<li>Tambahkan <code>implements Serializable</code> pada class <code>Mahasiswa</code>, selanjutnya jalankan kembali program yang telah dibuat sebelumnya.</li>
+</ol>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Mengapa sebelumnya ketika program Anda dijalankan error?</li>
+<li>Apa fungsi dari penambahan <code>implements Serializable</code>?</li>
+<li>Tambahkan attribut <code>jurusan, program studi, dan ipk</code> pada class <code>Mahasiswa</code></li>
+</ol>
+<h3 id="praktikum-2">Praktikum 2</h3>
+<p>Pada praktikum yang kedua menerapkan kata kunci <code>transient</code> dan <code>static</code> pada sebuah attribut, untuk penggunaannya silakan ketik kode sebagai berikut</p>
+<ol>
+<li><p>Buat class <code>Matakuliah</code> </p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MataKuliah</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Serializable</span></span>{
+
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = <span class="hljs-number">5559055602375093688L</span>;
+
+     <span class="hljs-keyword">private</span> String kodeMk;
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> String nama;
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">byte</span> sks;
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MataKuliah</span><span class="hljs-params">(String kodeMk, String nama, <span class="hljs-keyword">byte</span> sks)</span> </span>{
+         <span class="hljs-keyword">this</span>.kodeMk = kodeMk;
+         <span class="hljs-keyword">this</span>.nama = nama;
+         <span class="hljs-keyword">this</span>.sks = sks;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getKodeMk</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> kodeMk;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setKodeMk</span><span class="hljs-params">(String kodeMk)</span> </span>{
+         <span class="hljs-keyword">this</span>.kodeMk = kodeMk;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getNama</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> nama;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNama</span><span class="hljs-params">(String nama)</span> </span>{
+         <span class="hljs-keyword">this</span>.nama = nama;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">byte</span> <span class="hljs-title">getSks</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> sks;
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSks</span><span class="hljs-params">(<span class="hljs-keyword">byte</span> sks)</span> </span>{
+         <span class="hljs-keyword">this</span>.sks = sks;
+     }
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;MataKuliah{&quot;</span> + <span class="hljs-string">&quot;kodeMk=&quot;</span> + kodeMk + <span class="hljs-string">&quot;, nama=&quot;</span> + nama + <span class="hljs-string">&quot;, sks=&quot;</span> + sks + <span class="hljs-string">&apos;}&apos;</span>;
+     }  
+
+ }
+</code></pre>
+<p>Khusus untuk membuat attribut <code>serialVersionUID</code> bisa juga dilakukan otomatis menggunakan editor Netbeans, caranya adalah install terlebih dahulu plugin <code>serialVersionUID generator</code> dengan cara sebagai berikut. Pilih menu <code>Tools - Plugins</code> sehingga muncul wizard seperti di bawah ini</p>
+<figure style="text-align: center">
+               <img src="images/08-02.png" alt="Install plugin">
+               <figcaption style="text-align: center; font-weight: bold">Install plugin</figcaption>
+           </figure>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+
+
+</li>
+</ol>
+<p>   Jika sudah berhasil, kemudian klik kanan pada class yang akan digenerate <code>serialVersionUID</code> seperti ditunjukkan pada gambar di bawah ini
+   <figure style="text-align: center">
+                     <img src="images/08-03.png" alt="Genereate serialVersionUID">
+                     <figcaption style="text-align: center; font-weight: bold">Genereate serialVersionUID</figcaption>
+                 </figure></p>
+<ol>
+<li><p>Buatlah class <code>Praktikum2</code> seperti berikut</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Praktikum2</span> </span>{
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+         MataKuliah mk = <span class="hljs-keyword">new</span> MataKuliah(<span class="hljs-string">&quot;001&quot;</span>, <span class="hljs-string">&quot;Pemrograman Jaringan&quot;</span>, (<span class="hljs-keyword">byte</span>) <span class="hljs-number">3</span>);
+         <span class="hljs-keyword">try</span> {
+             System.out.println(<span class="hljs-string">&quot;&quot;</span> + mk);
+             ObjectOutputStream oos = <span class="hljs-keyword">new</span> ObjectOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;mk.obj&quot;</span>));
+             oos.writeObject(mk);
+             oos.flush();
+             oos.close();
+             mk.setSks((<span class="hljs-keyword">byte</span>) <span class="hljs-number">2</span>);
+
+             ObjectInputStream ois = <span class="hljs-keyword">new</span> ObjectInputStream(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;mk.obj&quot;</span>));
+             <span class="hljs-keyword">try</span> {
+                 MataKuliah mk1 = (MataKuliah) ois.readObject();
+                 System.out.println(<span class="hljs-string">&quot;&quot;</span> + mk1);
+             } <span class="hljs-keyword">catch</span> (ClassNotFoundException ex) {
+                 Logger.getLogger(Praktikum2.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         } <span class="hljs-keyword">catch</span> (FileNotFoundException ex) {
+             Logger.getLogger(Praktikum2.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+         } <span class="hljs-keyword">catch</span> (IOException ex) {
+             Logger.getLogger(Praktikum2.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+         }
+     }
+
+ }
+</code></pre>
+</li>
+<li>Jalankan kode di atas, amati hasilnya!</li>
+</ol>
+<h4 id="pertanyaan">Pertanyaan</h4>
+<ol>
+<li>Setelah menjalankan kode di atas, apakah perbedaan <code>modifier transient dan static</code> pada class yang meng-implements Serialize?</li>
+<li>Apa yang dapat Anda simpulkan dengan praktikum 1 dan praktikum 2?</li>
+</ol>
+<h3 id="tugas">Tugas</h3>
+<p>Buatlah aplikasi CRUD sederhana seperti tampilan di atas dengan memanfaatkan teknik serialization dan deserialization, sehingga ketika sudah berhasil menyimpan data ketika aplikasi dijalankan kembali tidak hilang.</p>
+<p><figure style="text-align: center">
+                     <img src="images/praktikum08-tugas.gif" alt="Operasi CRUD">
+                     <figcaption style="text-align: center; font-weight: bold">Operasi CRUD</figcaption>
+                 </figure>
+<!---**Kerjakan praktikum terlebih dahulu ^_^**--></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../09/jobsheet09.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 10. Thread">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. Object Persistence dan Object Serialization","level":"1.11","depth":1,"next":{"title":"10. Thread","level":"1.12","depth":1,"path":"09/jobsheet09.md","ref":"09/jobsheet09.md","articles":[]},"previous":{"title":"8. UTS","level":"1.10","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"08/jobsheet08.md","mtime":"2019-12-10T04:56:20.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

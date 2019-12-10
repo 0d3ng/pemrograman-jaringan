@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Filter Stream · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../05/jobsheet05.html" />
+    
+    
+    <link rel="prev" href="../03/jobsheet03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Pemrograman Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../00/kontrak.html">
+            
+                <a href="../00/kontrak.html">
+            
+                    
+                    Kontrak Praktikum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01/jobsheet01.html">
+            
+                <a href="../01/jobsheet01.html">
+            
+                    
+                    1. Review Konsep Jaringan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02/jobsheet02.html">
+            
+                <a href="../02/jobsheet02.html">
+            
+                    
+                    2. Internet Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03/jobsheet03.html">
+            
+                <a href="../03/jobsheet03.html">
+            
+                    
+                    3. Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="jobsheet04.html">
+            
+                <a href="jobsheet04.html">
+            
+                    
+                    4. Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05/jobsheet05.html">
+            
+                <a href="../05/jobsheet05.html">
+            
+                    
+                    5. Line Number - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/jobsheet06.html">
+            
+                <a href="../06/jobsheet06.html">
+            
+                    
+                    6. Push Back - Filter Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/jobsheet07.html">
+            
+                <a href="../07/jobsheet07.html">
+            
+                    
+                    7. Mini Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    8. UTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08/jobsheet08.html">
+            
+                <a href="../08/jobsheet08.html">
+            
+                    
+                    9. Object Persistence dan Object Serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../09/jobsheet09.html">
+            
+                <a href="../09/jobsheet09.html">
+            
+                    
+                    10. Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../10/jobsheet10.html">
+            
+                <a href="../10/jobsheet10.html">
+            
+                    
+                    11. Thread Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../11/jobsheet11.html">
+            
+                <a href="../11/jobsheet11.html">
+            
+                    
+                    12. Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../12/jobsheet12.html">
+            
+                <a href="../12/jobsheet12.html">
+            
+                    
+                    13. Pemrograman User Datagram Protocol (UDP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    14. Kuis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../13/jobsheet13.html">
+            
+                <a href="../13/jobsheet13.html">
+            
+                    
+                    15. Multicast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../14/jobsheet14.html">
+            
+                <a href="../14/jobsheet14.html">
+            
+                    
+                    16. Uniform Resource Locator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    17. UAS
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. Filter Stream</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="filter-stream">FILTER STREAM</h1>
+<h2 id="tujuan">Tujuan</h2>
+<ul>
+<li>Memahami fungsi dan mengetahui kelebihan dari filter stream</li>
+<li>Menerapkannya dalam aplikasi</li>
+</ul>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Awali setiap sebelum membuat projek dengan berdoa.</li>
+<li>Baca dan pahami tujuan, dasar teori, dan latihan-latihan modul dengan baik.</li>
+<li>Kerjakan tugas-tugas projek dengan baik, sabar dan jujur</li>
+</ul>
+<h2 id="ulasan-teori">Ulasan Teori</h2>
+<p>Karena stream dasar hanya menerapkan mekanisme pembacaan byte dari informasi atau data secara sederhana, maka fleksibilitasnya terbatas. Pembacaan byte dari data tidaklah simpel, arti dari byte bisa bervariasi tergantung jenis datanya. Teks contohnya, merupakan rangkaian dari karakter karakter, dan contoh lain adalah deretan angka-angka yang mana masing-masing karakter dan angka bisa dibentuk lebih dari satu byte data tunggal. Komunikasi pada level byte juga bisa sangat tidak efisien, dan pemberian buffer juga dapat meningkatkan performasi dari sistem. Permasalahan-permasalahan tersebut bisa diatasi dengan penggunaan filter stream.</p>
+<h3 id="dasar-filter-stream">Dasar Filter Stream</h3>
+<p>Filter Stream menambahkan fungsionalitas pada stream-stream dasar, dengan memproses data sedemikian rupa (seperti penambahan buffer untuk meningkatkan kinerja) atau menambahkan method-method untuk mengakses data dalam cara yang berbeda (seperti membaca data per baris, dibandingkan pembacaan data standar yang byte per byte).</p>
+<p>Filter Stream dibagi pula menjadi 2 kategori :  filter input stream dan filter output stream. Setiap filter stream disambungkan ke input stream atau output stream dalam penggunaannya. Menyambungkan filter stream sangat sederhana, buat objek filter streamnya (dengan memasukkan stream yang sudah ada  ke parameter input method pembentuknya), dan selanjutnya proses pembacaan atau penulisan data cukup melalui filter stream tersebut.</p>
+<p>Contoh apabila kita ingin menggunakan salah satu filter output stream yang bertipe PrintStream (digunakan untuk mencetak teks ke subclass dari Output Stream) pada stream output yang menuliskan data ke file. Kode di bawah ini dapat digunakan :</p>
+<pre><code class="lang-java">FileOutputStream fout = <span class="hljs-keyword">new</span> FileOutputStream ( somefile ); 
+PrintStream pout = <span class="hljs-keyword">new</span> PrintStream (fout); 
+pout.println (<span class="hljs-string">&quot;hello world&quot;</span>);
+</code></pre>
+<p>Dapat dilihat bahwa penulisan atau pembacaan yang tadinya dilakukan pada stream dasar, apabila telah dihubungkan dengan sebuah filter stream, maka penulisan atau pembacaan data dilakukan pada filter streamnya. </p>
+<h3 id="filter-input-stream">Filter Input Stream</h3>
+<p>Beberapa filter input stream yang umum dan terdapat pada semua versi Java dalah sebagai berikut:</p>
+<p>Tabel Filter Input Stream</p>
+<table>
+<thead>
+<tr>
+<th>Filter Input Stream</th>
+<th>Fungsi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BufferedInputStream</code></td>
+<td>Memberi buffer pengaksesan data, untuk meningkatkan efisiensi dan kinerja</td>
+</tr>
+<tr>
+<td><code>DataInputStream</code></td>
+<td>Membaca tipe data primitif (int, float, double etc)</td>
+</tr>
+<tr>
+<td><code>LineNumberInputStream</code></td>
+<td>Menjaga hitungan jumlah baris dari data yang sedang dibaca berdasarkan karakter-karakter yang memiliki interpretasi end-of-line</td>
+</tr>
+<tr>
+<td><code>PushBackInputStream</code></td>
+<td>Filter yang memungkinkan pembacaan data dan mengembalikannya lagi ke dalam stream untuk dibaca lagi.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="buffered-input-stream">Buffered Input Stream</h3>
+<p>Kegunaan dari memberikan buffer pada I/O adalah menambah performasi kerja. Dibandingkan dengan pembacaan data byte per byte, sejumlah besar byte dibaca bersamaan pada saat method read()class ini dieksekusi. Hal ini meningkatkan kecepatan waktu akses dari sumber data dan mengurangi jumlah blok aplikasi ke input yang menjadi sumber data.</p>
+<ul>
+<li>Konstruktor buffered input stream<ul>
+<li><code>BufferedInputStream(InputStream input)</code>: membuat stream dengan buffer yang akan membaca dari input stream yang dijadikan parameter</li>
+<li><code>BufferedInputStream(InputStream input, int bufferSize)</code>: membuat stream dengan buffer sesuai ukuran yang ditentukan, yang akan membaca dari input stream yang dijadikan parameter.</li>
+</ul>
+</li>
+<li>Method-method
+  Tidak ada method tambahan. Hanya memodifikasi method read(), dan mendukung pemakaian method mark() dan reset().</li>
+</ul>
+<h3 id="data-input-stream">Data Input Stream</h3>
+<p>Penulisan dan pembacaan data bertipe primitif seperti angka dan karakter sangat sering dijumpai dalam pemrograman. Informasi / data seperti itu tidak mudah direpresentasikan dalam byte-byte. Dengan filter stream ini, pengembang aplikasi tidak perlu susah-susah dalam mengkonversi data byte ke data primitif. Tetapi cukup dengan memanfaatkan method dari kelas filter stream ini, yang otomatis melakukan mentranlasi data.</p>
+<ul>
+<li>Konstruktor<ul>
+<li><code>DataInputStream(InputStream input)</code></li>
+</ul>
+</li>
+<li>Method-method<ul>
+<li><code>boolean readBoolean()</code></li>
+<li><code>char readChar()</code> </li>
+<li><code>double readDouble()</code></li>
+<li><code>float readFloat()</code> </li>
+<li><code>void readFully(byte[] byteArray)</code> </li>
+<li><code>void readFully(byte[] byteArray, int offset, int length)</code> </li>
+<li><code>float readInt()</code> </li>
+<li><code>String readLine()</code></li>
+<li><code>long readLong()</code></li>
+<li><code>short readShort( )</code></li>
+<li><code>int readUnsignedByte( )</code> </li>
+<li><code>int readUnsignedShort( )</code> </li>
+<li><code>String readUTF( )</code></li>
+<li><code>static String readUTF(DataInputStream input)</code></li>
+<li><code>int skipBytes(int number).</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="linenumber-input-stream">LineNumber Input Stream</h3>
+<p>Memberikan fungsionalitas yang berguna yaitu memantau jumlah baris data yang telah dibaca dari input stream.</p>
+<p><strong>Konstruktor</strong></p>
+<ul>
+<li><code>LineNumberInputStream(InputStream input)</code> &#x2013; membuat sebuah line number stream, yang membaca dari input stream input</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li><code>int getLineNumber()</code> &#x2013; mengembalikan nilai jumlah baris yang telah dibaca dari input stream yang bersangkutan</li>
+<li><code>void setLineNumber(int number)</code> &#x2013; mengubah nilai counter nomor baris menjadi nilai yang ditentukan dalam number</li>
+</ul>
+<h3 id="push-back-input-stream">Push Back Input Stream</h3>
+<p>Memiliki kemampuan untuk membaca sebuah byte data tunggal, lalu dikembalikan lagi ke dalam input stream untuk dibaca kemudian. Untuk itu dia mempunyai sebuah buffer internal. Kelas ini berguna bila programmer ingin &#x2018;mengintip&#x2019; data apa yang akan dibaca selanjutnya dari rangkaian byte data pada input stream.</p>
+<p><strong>Konstruktor</strong></p>
+<ul>
+<li><code>PushBackInputStream(InputStream input)</code></li>
+<li><code>PushBackInputStream(InputStream input, int bufferSize)</code> &#x2013; membuat  PushBackInputStream yang akan membaca dari input stream dan menggunakan buffer dengan besar yang ditentukan.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li><code>void unread(byte[] byteArray)</code> &#x2013; mengembalikan isi dari array byteArray.</li>
+<li><code>void unread(byte[] byteArray, int offset, int length)</code></li>
+<li><code>void unread(int byte)</code> &#x2013; mengembalikan byte yang diinputkan ke awal dari buffer</li>
+</ul>
+<h3 id="filter-output-stream">Filter Output Stream</h3>
+<p>Beberapa filter output stream yang umum dan terdapat pada semua versi Java adalah sebagai berikut :</p>
+<p>Tabel Kegunaan Output Stream</p>
+<table>
+<thead>
+<tr>
+<th>Filter Output Stream</th>
+<th>Kegunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BufferedOutputStream</code></td>
+<td>Menyediakan buffer untuk menuliskan data</td>
+</tr>
+<tr>
+<td><code>DataOutputStream</code></td>
+<td>Menuliskan tipe data primitif seperti  bytes dan angka.</td>
+</tr>
+<tr>
+<td><code>PrintStream</code></td>
+<td>Menyediakan method tambahan untuk menuliskan baris teks atau tipe data lain sebagai sebuah teks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="buffered-output-stream">Buffered Output Stream</h3>
+<p>Memiliki buffer internal yang dikelolanya, dimana apabila buffer tersebut penuh, maka isi dari buffer akan dikosongkan untuk dimasukkan ke output stream dimana dia terhubung.</p>
+<ul>
+<li><p><strong>Konstruktor</strong></p>
+<ul>
+<li><code>BufferedOutputStream(OutputStream output)</code> &#x2013; membuat buffer untuk menuliskan data pada output stream yang ditunjuk (default buffer nya sebesar 512 bytes)    </li>
+<li><code>BufferedOutputStream(OutputStream output, int bufferSize)</code> &#x2013; membuat objek bufferedOutputStream yang terhubung pada output stream yang ditunjuk dengan ukuran buffer  yang ditentukan.</li>
+</ul>
+</li>
+<li><p><strong>Methods</strong></p>
+<p> Tidak memiliki method tambahan selain bawaan dari kelas Output Stream.</p>
+</li>
+</ul>
+<h3 id="data-output-stream">Data Output Stream</h3>
+<p>Didesain untuk bekerja dengan tipe data primitif seperti angka-angka atau bytes.</p>
+<ul>
+<li><p><strong>Konstruktor</strong></p>
+<ul>
+<li><code>DataOutputStream(OutputStream output)</code> &#x2013; membuat objek data output stream yang terhubung dengan output stream yang ditunjuk</li>
+</ul>
+</li>
+<li><p><strong>Method</strong></p>
+<ul>
+<li><code>int size( )</code> &#x2013; mengembalikan jumlah byte yang telah dikirimkan pada data output stream</li>
+<li><code>void writeBoolean(boolean value)</code> &#x2013; menuliskan nilai boolean yang ditentukan dalam bentuk byte</li>
+<li><code>void writeByte(int byte)</code> &#x2013; menuliskan byte yang ditentukan pada output stream</li>
+<li><code>void writeBytes(String string)</code> &#x2013; menuliskan seluruh isi string ke output stream sebagai byte, satu per satu byte</li>
+<li><code>void writeChar(int char)</code> &#x2013; menuliskan karakter ke output stream sebagai nilai byte (2 byte per karakter)</li>
+<li><code>void writeChars(String string)</code> &#x2013; menuliskan seluruh isi string ke output stream sebagai byte, masing-masing karakter diwakili 2 byte</li>
+<li><code>void writeDouble(double doubleValue)</code> &#x2013; mengkonversi nilai data double yang dimasukkan menjadi nilai long, lalu mengkonversinya lagi ke dalam bentuk 8-byte data.</li>
+<li><code>void writeFloat(float floatValue)</code> &#x2013; mengkonversi nilai data float yang dimasukkan menjadi nilai int, lalu mengkonversinya lagi ke dalam bentuk 4-byte data.</li>
+<li><code>void writeInt(int intValue)</code> &#x2013; menuliskan nilai int sebagai 4-byte data</li>
+<li><code>void writeLong(int intValue)</code> &#x2013; menuliskan nilai long sebagai 8-byte data</li>
+<li><code>void writeShort(int intValue)</code> &#x2013; menuliskan nilai short sebagai 2-byte data</li>
+<li><code>void writeUTF(String string)</code> &#x2013; menuliskan isi string menggunakan UTF-8 encoding</li>
+</ul>
+</li>
+</ul>
+<h3 id="printstream">PrintStream</h3>
+<ul>
+<li><p><strong>Konstuktor</strong> :</p>
+<ul>
+<li><code>PrintStream (OutputStream output)</code>      </li>
+<li><code>PrintStream (OutputStream output, boolean flush)</code> &#x2013; membuat print stream dimana bila nilai boolean diset &#x2018;true&#x2019;, maka buffer yang dimilikinya bisa otomatis melakukan &#x2018;flushing&#x2019; data</li>
+</ul>
+</li>
+<li><p><strong>Method</strong></p>
+<ul>
+<li><code>boolean checkError( )</code> &#x2013; automatically flushed the output stream and checks to see if an error has occurred</li>
+<li><code>void print(boolean value)</code> &#x2013; print a boolean value</li>
+<li><code>void print(char character)</code> &#x2013; prints a character value</li>
+<li><code>void print(char [] charArray)</code> &#x2013; prints an array of characters</li>
+<li><code>void print(double doubleValue)</code> &#x2013; prints a double value</li>
+<li><code>void print(float floatValue)</code> &#x2013; prints a float value</li>
+<li><code>void print(int intValue)</code> &#x2013; prints an int value</li>
+<li><code>void print(long longValue)</code> &#x2013; prints a long value</li>
+<li><code>void print(Object obj)</code> &#x2013; prints the value of the specified object&#x2019;s toString( ) method</li>
+<li><code>void print(String string)</code> &#x2013; prints a string&#x2019;s contents</li>
+<li><code>void println( )</code> &#x2013; sends a line separator (\n)</li>
+<li><code>void println(char character)</code> &#x2013; prints a character value followed by a println()</li>
+<li><code>void println(char[] charArray)</code> &#x2013; prints an array of characters followed by println()</li>
+<li><code>void println(double doubleValue)</code> &#x2013; prints a double value followed by println() Methods</li>
+<li><code>void println(float floatValue)</code> &#x2013; prints a float value followed by println()</li>
+<li><code>void println(int intValue)</code> &#x2013; prints an int value followed by println()</li>
+<li><code>void println(long longValue)</code> &#x2013; prints a long value followed by println()</li>
+<li><code>void println(Object obj)</code> &#x2013; prints the value of the specified object&#x2019;s toString( ) method followed by println()</li>
+<li><code>void println(String string)</code> &#x2013; prints a string followed by a line separator</li>
+<li><code>protected void SetError( )</code> &#x2013; modifies the error flag to a value of &#x201C;true&#x201D;</li>
+</ul>
+</li>
+</ul>
+<h2 id="praktikum-1">Praktikum 1</h2>
+<p>Pada praktikum 1 yaitu program yang dibuat agar dapat membaca input karakter dari keyboard, dengan memanfaatkan class <code>BufferedReader</code>.</p>
+<ol>
+<li>Buat class <code>ReadInputKeyboard</code></li>
+<li><p>Tambahkan kode di bawah ini pada <code>method main()</code> </p>
+<pre><code class="lang-java"> BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(System.in));
+         System.out.println(<span class="hljs-string">&quot;Masukan karakter apapun, [tekan keluar tekan `q`]: &quot;</span>);
+         <span class="hljs-keyword">char</span> input = <span class="hljs-number">0</span>;
+         do {
+             <span class="hljs-keyword">try</span> {
+                 input = (<span class="hljs-keyword">char</span>) br.read();
+                 System.out.print(<span class="hljs-string">&quot;&quot;</span> + input);
+             } <span class="hljs-keyword">catch</span> (IOException ex) {
+                 Logger.getLogger(ReadInputKeyboard.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             }
+         } <span class="hljs-keyword">while</span> (input != <span class="hljs-string">&apos;q&apos;</span>);
+</code></pre>
+</li>
+<li><p>Silakan jalankan kode di atas, dan amati hasil</p>
+</li>
+</ol>
+<h3 id="pertanyaan">Pertanyaan</h3>
+<ol>
+<li>Modifikasi program di atas sehingga dapat melakukan pembacaan text atau <code>String</code>!</li>
+<li>Mengapa <code>try-catch</code> diletakkan di dalam perulangan <code>do-while</code>?</li>
+<li>Silakan ubah kode di atas dengan memanfaatkan class selain <code>BufferedReader</code>, tetapi masih bisa membaca input melalui keyboard!</li>
+</ol>
+<h2 id="praktikum-2">Praktikum 2</h2>
+<p>Pada praktikum 2 ini kita akan memanfaatkan class <code>BufferedInputStream</code> dan class <code>BufferedOutputStream</code> untuk melakukan operasi pada sebuah file. Hasilnya adalah dicontoh pada gambar di bawah ini</p>
+   <figure style="text-align: center">
+        <img src="images/praktikum04.gif" alt="Praktikum 4">
+        <figcaption style="text-align: center; font-weight: bold">Hasil Praktikum 4</figcaption>
+    </figure>
+
+<ol>
+<li>Silakan gunakan project pada praktikum 3, penamaan <strong>identifier(class ataupun variabel) harus sesuai dengan convension name Java</strong>.</li>
+<li><p>Ubah kode pada fungsi baca atau read menjadi seperti di bawah ini</p>
+<pre><code class="lang-java">     JFileChooser loadFile = view.getLoadFile();
+             StyledDocument doc = view.getTxtPane().getStyledDocument();
+             <span class="hljs-keyword">if</span> (JFileChooser.APPROVE_OPTION == loadFile.showOpenDialog(view)) {
+                 BufferedInputStream reader = <span class="hljs-keyword">null</span>;
+                 <span class="hljs-keyword">try</span> {
+                     reader = <span class="hljs-keyword">new</span> BufferedInputStream(<span class="hljs-keyword">new</span> FileInputStream(loadFile.getSelectedFile()));
+                     doc.insertString(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-keyword">null</span>);
+                     <span class="hljs-keyword">int</span> temp = <span class="hljs-number">0</span>;
+                     List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+                     <span class="hljs-keyword">while</span> ((temp=reader.read()) != -<span class="hljs-number">1</span>) {                    
+                         list.add(temp);
+                     }
+                     <span class="hljs-keyword">if</span> (!list.isEmpty()) {
+                         <span class="hljs-keyword">byte</span>[] dt = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[list.size()];
+                         <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+                         <span class="hljs-keyword">for</span> (Integer integer : list) {
+                             dt[i]=integer.byteValue();
+                             i++;
+                         }
+                         doc.insertString(doc.getLength(), <span class="hljs-keyword">new</span> String(dt), <span class="hljs-keyword">null</span>);
+                         JOptionPane.showMessageDialog(view, <span class="hljs-string">&quot;File berhasil dibaca.&quot;</span>, <span class="hljs-string">&quot;Informasi&quot;</span>, JOptionPane.INFORMATION_MESSAGE);
+                     }
+                 } <span class="hljs-keyword">catch</span> (FileNotFoundException ex) {
+                     Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                 } <span class="hljs-keyword">catch</span> (IOException | BadLocationException ex) {
+                     Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                 } <span class="hljs-keyword">finally</span> {
+                     <span class="hljs-keyword">if</span> (reader != <span class="hljs-keyword">null</span>) {
+                         <span class="hljs-keyword">try</span> {
+                             reader.close();
+                         } <span class="hljs-keyword">catch</span> (IOException ex) {
+                             Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                         }
+                     }
+                 }
+             }
+</code></pre>
+</li>
+<li><p>Selanjutnya ubah juga fungsi tulis atau write menjadi seperti di bawah ini</p>
+<pre><code class="lang-java"> JFileChooser loadFile = view.getLoadFile();
+         <span class="hljs-keyword">if</span> (JFileChooser.APPROVE_OPTION == loadFile.showSaveDialog(view)) {
+             BufferedOutputStream writer = <span class="hljs-keyword">null</span>;
+             <span class="hljs-keyword">try</span> {
+                 String contents = view.getTxtPane().getText();
+                 <span class="hljs-keyword">if</span> (contents != <span class="hljs-keyword">null</span> &amp;&amp; !contents.isEmpty()) {
+                     writer = <span class="hljs-keyword">new</span> BufferedOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(loadFile.getSelectedFile()));
+                     writer.write(contents.getBytes());
+                     JOptionPane.showMessageDialog(view, <span class="hljs-string">&quot;File berhasil ditulis.&quot;</span>, <span class="hljs-string">&quot;Informasi&quot;</span>, JOptionPane.INFORMATION_MESSAGE);
+                 }
+
+             } <span class="hljs-keyword">catch</span> (FileNotFoundException ex) {
+                 Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             } <span class="hljs-keyword">catch</span> (IOException ex) {
+                 Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+             } <span class="hljs-keyword">finally</span> {
+                 <span class="hljs-keyword">if</span> (writer != <span class="hljs-keyword">null</span>) {
+                     <span class="hljs-keyword">try</span> {
+                         writer.flush();
+                         writer.close();
+                         view.getTxtPane().setText(<span class="hljs-string">&quot;&quot;</span>);
+                     } <span class="hljs-keyword">catch</span> (IOException ex) {
+                         Logger.getLogger(Praktikum4Controller.class.getName()).log(Level.SEVERE, <span class="hljs-keyword">null</span>, ex);
+                     }
+                 }
+             }
+         }
+</code></pre>
+</li>
+<li>Silakan dijalankan, kemudian amati hasilnya.</li>
+</ol>
+<h3 id="pertanyaan">Pertanyaan</h3>
+<ol>
+<li>Sebuatkan perbedaan dari yang sebelumnya, ketika kode belum diubah selain dari sisi sintaks! Berikan argument Anda!</li>
+<li>Pada kode di atas, proses baca menggunakan fungsi <code>read()</code>, silakan diubah menggunakan <code>read(byte b[])</code> atau <code>read(byte b[], int off, int len)</code>. Jalankan kembali hasil perubahan yang Anda lakukan!</li>
+<li>Pada kode di atas, proses tulis menggunakan fungsi <code>write(byte b[])</code>, silakan diubah menggunakan <code>write(byte b)</code> atau <code>write(byte b[], int off, int len)</code>. Jalankan kembali hasil perubahan yang Anda lakukan!</li>
+</ol>
+<h2 id="tugas">Tugas</h2>
+<ol>
+<li><p>Buat sebuah program dengan tampilan seperti berikut ini</p>
+ <figure style="text-align: center">
+         <img src="images/praktikum04-tugas.gif" alt="Tugas">
+         <figcaption style="text-align: center; font-weight: bold">Tugas</figcaption>
+     </figure>
+</li>
+<li><p>Struktur program seperti yang sebelumnya telah diajarkan, bagian logic dan view harus dipisah</p>
+</li>
+<li>Terdapat validasi input<ul>
+<li>Ketika field panjang atau lebar kosong menampilkan pesan </li>
+<li>Field panjang atau lebar hanya boleh input berupa angka</li>
+</ul>
+</li>
+<li>Dengan memanfaatkan class <code>PrintStream</code>, buatlah sebuah file logging dari program di atas. <ul>
+<li>File <code>log.log</code> untuk mencatat ketika berhasil melakukan perhitungan</li>
+<li>File <code>log.err</code> untuk mencatat ketika terjadi error.</li>
+</ul>
+</li>
+<li>Selamat mengerjakan. :)</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../03/jobsheet03.html" class="navigation navigation-prev " aria-label="Previous page: 3. Stream">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../05/jobsheet05.html" class="navigation navigation-next " aria-label="Next page: 5. Line Number - Filter Stream">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Filter Stream","level":"1.6","depth":1,"next":{"title":"5. Line Number - Filter Stream","level":"1.7","depth":1,"path":"05/jobsheet05.md","ref":"05/jobsheet05.md","articles":[]},"previous":{"title":"3. Stream","level":"1.5","depth":1,"path":"03/jobsheet03.md","ref":"03/jobsheet03.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"04/jobsheet04.md","mtime":"2019-12-10T04:56:20.101Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T04:57:04.252Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
